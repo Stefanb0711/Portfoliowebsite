@@ -1,10 +1,25 @@
 import React, {useEffect} from 'react';
-import {useNavigate} from "react-router-dom";
+import {useNavigate, Link} from "react-router-dom";
 
 
 function Header() {
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Stelle sicher, dass der Header immer die gleiche Farbe behält
+            const header = document.querySelector('#header');
+            header.style.backgroundColor = '#3d4d6a'; // Immer blau
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initialer Aufruf um sicherzustellen, dass es beim Laden der Seite auch blau ist
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
 
     return (
@@ -16,12 +31,12 @@ function Header() {
 
                 <nav id="navmenu" className="navmenu">
                     <ul>
-                        <li><a href="">Start</a></li>
-                        <li><a href="">Über mich</a></li>
-                        <li><a href="">Blog</a></li>
+                        <li><Link to="/">Start</Link></li>
+                        <li><Link to="/über-mich">Über mich</Link></li>
+                        <li><Link to="/blog">Blog </Link></li>
 
                         <li className="dropdown">
-                            <a href=""><span>Portfolio</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <Link to="/portfolio"><span>Portfolio</span> <i className="bi bi-chevron-down toggle-dropdown"></i></Link>
                             <ul>
                                 <li><a href="#">Dropdown 1</a></li>
                                 <li className="dropdown">
