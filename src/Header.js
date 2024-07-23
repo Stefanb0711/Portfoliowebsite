@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react';
+import {useNavigate} from "react-router-dom";
 
 
 function Header() {
 
+    const navigate = useNavigate();
 
 
     return (
@@ -14,29 +16,42 @@ function Header() {
 
                 <nav id="navmenu" className="navmenu">
                     <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="">Start</a></li>
+                        <li><a href="">Über mich</a></li>
+                        <li><a href="">Blog</a></li>
+
                         <li className="dropdown">
-                            <a href="#"><span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <a href=""><span>Portfolio</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
                                 <li><a href="#">Dropdown 1</a></li>
                                 <li className="dropdown">
-                                    <a href="#"><span>Deep Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                    <a href="#"><span>Python</span> <i
+                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
                                     <ul>
-                                        <li><a href="#">Deep Dropdown 1</a></li>
-                                        <li><a href="#">Deep Dropdown 2</a></li>
-                                        <li><a href="#">Deep Dropdown 3</a></li>
-                                        <li><a href="#">Deep Dropdown 4</a></li>
-                                        <li><a href="#">Deep Dropdown 5</a></li>
+                                        <li><a href="#">Webdevelopment</a></li>
+                                        <li><a href="#">GUI-Programming</a></li>
+                                        <li><a href="#">Webscraping</a></li>
+                                        <li><a href="#">Games</a></li>
+                                        <li><a href="#">GUI-Automation</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Dropdown 2</a></li>
-                                <li><a href="#">Dropdown 3</a></li>
-                                <li><a href="#">Dropdown 4</a></li>
+
+                                <li className="dropdown">
+                                    <a href="#"><span>Javascript</span> <i
+                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                    <ul>
+                                        <li><a href="#">React </a></li>
+                                        <li><a href="#">GUI-Programming</a></li>
+                                        <li><a href="#">Webscraping</a></li>
+                                        <li><a href="#">Games</a></li>
+                                        <li><a href="#">GUI-Automation</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li><a href="#">Javascript</a></li>
+                                <li><a href="#">Cpp</a></li>
+                                <li><a href="#">Ethical Hacking</a></li>
                             </ul>
                         </li>
                         <li><a href="#contact">Contact</a></li>
