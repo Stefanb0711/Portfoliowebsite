@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 
 
-function SortByInput(){
+function SortByInput(props){
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -11,12 +11,16 @@ function SortByInput(){
 
     }
 
+    function onSort(){
+
+    }
+
     return (
         <div>
             <input onClick={handleClick} placeholder="Filtern nach..."  />
             {dropdownOpen ? <ul className="list-group">
-                <li className="list-group-item">Programmiersprache</li>
-                <li className="list-group-item">Thema</li>
+                <li onClick={onSort} className="list-group-item">Programmiersprache</li>
+                <li onClick={onSort} className="list-group-item">Thema</li>
             </ul> :
                 <div> </div>
             }

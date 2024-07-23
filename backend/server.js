@@ -28,7 +28,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 
-app.get("/portfolio", async (req, res) => {
+app.post("/get-all-portfolio-projects", async (req, res) => {
 
     try{
         const result = await db.query("SELECT * FROM projects")
@@ -38,6 +38,26 @@ app.get("/portfolio", async (req, res) => {
     }
 })
 
+
+app.post("/get-portfolio-projects-sorted-by-language", async (req, res) => {
+
+    try{
+        const result = await db.query("SELECT DISTINCT language FROM projects");
+
+        if(result.rows.length === 0){
+            console.log("Keine Sprachen gefunden");
+            return res.status(404).json({message: "ULanguage not found"});
+        }
+
+    return res.status(200).json({message: "", languages: result.rows});
+
+    }catch(err){
+        console.error(err);
+        return res.status(500).json({message: 'Internal Server Error'});
+    }
+})
+
+app.post("/get-portfolio")
 
 
 app.listen(port, () => {

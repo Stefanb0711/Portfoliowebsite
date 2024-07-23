@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+import SortByInput from "./components/sortByInput";
+import axios from "axios";
 
 
 function Portfolio(){
@@ -7,14 +9,25 @@ function Portfolio(){
 
     const [projectGroups, setProjectGroups] = useState([]);
 
-  useEffect(() => {
 
+    async function getLanguages(){
 
+      const response = await axios.get("http://localhost:5000/get-portfolio-projects-sorted-by-language");
 
-  }, []);
+      if (response.status >= 200 && response.status < 300){
+
+        if (response.data === []){
+
+        }
+
+      }
+
+    }
 
     return(
         <section id="portfolio" class="portfolio section">
+
+          <SortByInput  />
 
       {/* Section Title */}
       <div class="container section-title" >
