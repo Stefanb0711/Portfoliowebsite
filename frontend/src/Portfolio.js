@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 
 function Portfolio(){
 
+    const [portfolioProjects, setPortfolioprojects] = useState([]);
 
+    const [projectGroups, setProjectGroups] = useState([]);
+
+  useEffect(() => {
+
+
+
+  }, []);
 
     return(
         <section id="portfolio" class="portfolio section">
