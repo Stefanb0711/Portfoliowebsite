@@ -8,7 +8,7 @@ function Home() {
         <div>
 
 
-            <section id="hero" class="hero section dark-background">
+        <section id="hero" class="hero section dark-background">
 
       <div class="container">
         <div class="row gy-4">
