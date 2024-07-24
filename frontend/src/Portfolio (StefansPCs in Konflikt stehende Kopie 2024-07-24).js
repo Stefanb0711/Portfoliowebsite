@@ -6,7 +6,7 @@ import axios from "axios";
 
 function Portfolio(){
 
-    const [filterStatus, setFilterStatus] = useState("inactive");
+    const [portfolioProjects, setPortfolioprojects] = useState([]);
 
     const [projectGroups, setProjectGroups] = useState([]);
 
@@ -16,7 +16,6 @@ function Portfolio(){
       const response = await axios.post("http://localhost:5000/get-portfolio-projects-sorted-by-language");
 
       setProjectGroups(response.data["languages"]);
-        
 
         console.log("ProjectGroups: ", response.data["languages"]);
 
@@ -29,8 +28,6 @@ function Portfolio(){
         console.log("No Languages found");
         return;
     }
-
-    setFilterStatus("languages");
 
     console.log("Eine ausgewählte Sprache: ", response.data["languages"][0]["language"]);
 
@@ -54,9 +51,8 @@ function Portfolio(){
             console.log("No Languages found");
             return;
         }
-        setFilterStatus("properties");
 
-        setProjectGroups(response.data["properties"]);
+        setPortfolioprojects(response.data["properties"]);
 
         } catch(err){
             console.error(err);
@@ -88,24 +84,9 @@ function Portfolio(){
             <li data-filter=".filter-branding">Web</li>
           </ul>{/* End Portfolio Filters */}
 
-            {filterStatus === "properties" && (
-                <div>
-                    {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard title={projectGroup["properties"]} description=""
-                                               image={projectGroup["property_image"]}/>)
-                    })}
-                </div>
-            )}
-
-
-            {filterStatus === "languages" && (
-                <div>
-                    {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard title={projectGroup["language"]} description=""
-                                               image={projectGroup["language_image"]} />)
-                    })}
-                </div>
-            )}
+            {projectGroups.map((projectGroup) => {
+                return <PortfolioCard title={projectGroup["language"]} description="" image={projectGroup["language_image"]} />
+            })}
 
 
         </div>
