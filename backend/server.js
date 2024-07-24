@@ -13,8 +13,10 @@ const db = new pg.Client({
     user : "postgres",
     host : "localhost",
     database : "PortfolioProjects",
-    password: process.env.DATABASE_PW
+    password: "bonez187"//process.env.DATABASE_PW
 });
+
+db.connect();
 
 app.use(bodyParser.json());
 
@@ -57,7 +59,16 @@ app.post("/get-portfolio-projects-sorted-by-language", async (req, res) => {
     }
 })
 
-app.post("/get-portfolio")
+app.post("/get-portfolio-projects-sorted-by-properties", async (req, res) => {
+
+    try{
+
+        const result = await db.query("");
+
+    } catch(err){
+        console.log();
+    }
+})
 
 
 app.listen(port, () => {

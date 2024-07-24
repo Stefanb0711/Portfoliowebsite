@@ -12,22 +12,32 @@ function Portfolio(){
 
     async function getLanguages(){
 
-      const response = await axios.get("http://localhost:5000/get-portfolio-projects-sorted-by-language");
+      const response = await axios.post("http://localhost:5000/get-portfolio-projects-sorted-by-language");
+      console.log("Languages: ", response.data);
 
       if (response.status >= 200 && response.status < 300){
 
         if (response.data === []){
-
+            console.log("No Languages found");
+            return;
         }
 
+        console.log("Languages: ", response.data);
+
+
       }
+
+    }
+
+
+    async function getProperties() {
 
     }
 
     return(
         <section id="portfolio" class="portfolio section">
 
-          <SortByInput  />
+          <SortByInput sortByLanguage={getLanguages} sortByProperties={getProperties} />
 
       {/* Section Title */}
       <div class="container section-title" >

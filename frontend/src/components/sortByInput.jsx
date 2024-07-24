@@ -11,16 +11,13 @@ function SortByInput(props){
 
     }
 
-    function onSort(){
-
-    }
 
     return (
         <div>
             <input onClick={handleClick} placeholder="Filtern nach..."  />
-            {dropdownOpen ? <ul className="list-group">
-                <li onClick={onSort} className="list-group-item">Programmiersprache</li>
-                <li onClick={onSort} className="list-group-item">Thema</li>
+            {dropdownOpen ? <ul style={{width:"200px"}} className="list-group">
+                <li onClick={() => props.sortByLanguage()} className="list-group-item">Programmiersprache</li>
+                <li onClick={() => props.sortByProperties()} className="list-group-item">Thema</li>
             </ul> :
                 <div> </div>
             }
@@ -28,3 +25,5 @@ function SortByInput(props){
         </div>
     )
 }
+
+export default SortByInput;
