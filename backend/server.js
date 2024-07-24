@@ -44,11 +44,11 @@ app.post("/get-all-portfolio-projects", async (req, res) => {
 app.post("/get-portfolio-projects-sorted-by-language", async (req, res) => {
 
     try{
-        const result = await db.query("SELECT DISTINCT language FROM projects");
-
+        const result = await db.query("SELECT DISTINCT language, language_image FROM projects");
+        console.log("Result Rows: ", result.rows);
         if(result.rows.length === 0){
             console.log("Keine Sprachen gefunden");
-            return res.status(404).json({message: "ULanguage not found"});
+            return res.status(404).json({message: "Language not found"});
         }
 
     return res.status(200).json({message: "", languages: result.rows});
