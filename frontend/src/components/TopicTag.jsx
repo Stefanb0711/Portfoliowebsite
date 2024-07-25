@@ -5,7 +5,6 @@ function TopicTag(props){
     const colors = [
         'rgba(0, 255, 0, 0.5)',   // Grün
         'rgba(0, 0, 255, 0.5)',   // Blau
-        'rgba(255, 255, 0, 0.5)', // Gelb
         'rgba(255, 0, 0, 0.5)',   // Rot
         'rgba(128, 0, 128, 0.5)', // Lila
         'rgba(0, 255, 255, 0.5)'  // Türkis

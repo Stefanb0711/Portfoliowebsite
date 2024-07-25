@@ -13,7 +13,7 @@ const db = new pg.Client({
     user : "postgres",
     host : "localhost",
     database : "PortfolioProjects",
-    password: "bonez187"//process.env.DATABASE_PW
+    password: /*process.env.DATABASE_PW*/ "bonez187"
 });
 
 db.connect();

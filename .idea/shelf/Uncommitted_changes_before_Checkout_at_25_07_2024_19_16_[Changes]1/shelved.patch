@@ -1,0 +1,110 @@
+Index: frontend/src/components/PortfolioCard.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport {useNavigate, Link} from \"react-router-dom\";\r\nimport TopicTag from \"./TopicTag\";\r\n\r\nfunction PortfolioCard(props){\r\n\r\n    return (\r\n        <div class=\"row gy-4 isotope-container\" data-aos-delay=\"200\">\r\n            <Link to={`/${props.title}`}>\r\n            <div class=\"col-lg-4 col-md-6 portfolio-item isotope-item filter-app\">\r\n              <img src={props.image} class=\"img-fluid\" alt=\"\"/>\r\n              <div class=\"portfolio-info\">\r\n                <h4>{props.title}</h4>\r\n                <p>{props.description}</p>\r\n                <TopicTag topic={props.description} />\r\n                <a href={props.image } title=\"App 1\" data-gallery=\"portfolio-gallery-app\" class=\"glightbox preview-link\"><i class=\"bi bi-zoom-in\"></i></a>\r\n                <a href=\"portfolio-details.html\" title=\"More Details\" class=\"details-link\"><i class=\"bi bi-link-45deg\"></i></a>\r\n              </div>\r\n            </div>\r\n            </Link >\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default PortfolioCard;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frontend/src/components/PortfolioCard.jsx b/frontend/src/components/PortfolioCard.jsx
+--- a/frontend/src/components/PortfolioCard.jsx	
++++ b/frontend/src/components/PortfolioCard.jsx	
+@@ -12,7 +12,10 @@
+               <div class="portfolio-info">
+                 <h4>{props.title}</h4>
+                 <p>{props.description}</p>
+-                <TopicTag topic={props.description} />
++                  {props.description.map((topic, index) => {
++                      return (<TopicTag key={index} topic={topic} />);
++
++                  })}
+                 <a href={props.image } title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+               </div>
+Index: backend/server.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import express from \"express\";\r\nimport pg from \"pg\";\r\nimport bodyParser from \"body-parser\";\r\nimport cors from \"cors\";\r\nimport {config} from \"dotenv\";\r\n\r\nconfig();\r\n\r\nconst app = express();\r\nconst port = 5000;\r\n\r\nconst db = new pg.Client({\r\n    user : \"postgres\",\r\n    host : \"localhost\",\r\n    database : \"PortfolioProjects\",\r\n    password: \"bonez187\"//process.env.DATABASE_PW\r\n});\r\n\r\ndb.connect();\r\n\r\napp.use(bodyParser.json());\r\n\r\n\r\nconst corsOptions = {\r\n    origin: '*',\r\n    credentials: true,\r\n    optionSuccessStatus: 200\r\n}\r\n\r\napp.use(cors(corsOptions));\r\n\r\n\r\napp.post(\"/get-all-portfolio-projects\", async (req, res) => {\r\n\r\n    try{\r\n        const result = await db.query(\"SELECT * FROM projects\")\r\n\r\n    } catch(err){\r\n        console.error(err);\r\n    }\r\n})\r\n\r\n\r\napp.post(\"/get-portfolio-projects-sorted-by-language\", async (req, res) => {\r\n\r\n    try{\r\n        const result = await db.query(\"SELECT DISTINCT language, language_image FROM projects\");\r\n        //console.log(\"Result Rows: \", result.rows);\r\n        if(result.rows.length === 0){\r\n            console.log(\"Keine Sprachen gefunden\");\r\n            return res.status(404).json({message: \"Language not found\"});\r\n        }\r\n\r\n    return res.status(200).json({message: \"\", languages: result.rows});\r\n\r\n    }catch(err){\r\n        console.error(err);\r\n        return res.status(500).json({message: 'Internal Server Error'});\r\n    }\r\n})\r\n\r\napp.post(\"/get-portfolio-projects-sorted-by-properties\", async (req, res) => {\r\n\r\n    try{\r\n\r\n        const result = await db.query(\"SELECT DISTINCT properties, property_image FROM projects\");\r\n\r\n        if(result.rows.length === 0){\r\n            console.log(\"Keine Sprachen gefunden\");\r\n            return res.status(404).json({message: \"Language not found\"});\r\n        }\r\n\r\n    return res.status(200).json({message: \"\", properties: result.rows});\r\n\r\n    } catch(err){\r\n        console.log();\r\n    }\r\n})\r\n\r\n\r\napp.post(\"/get-topic-projects\", async (req, res) => {\r\n\r\n    const currentTopicName = req.body[\"path\"].split(\"/\")[1];\r\n\r\n    console.log(\"Current Topic Name: \", currentTopicName);\r\n\r\n    console.log(\"get-topic-projects erreichbar\");\r\n    try{\r\n        const result = await db.query('SELECT * FROM projects WHERE language = $1 OR $2 = ANY(properties) ', [currentTopicName, currentTopicName]);\r\n\r\n        if(result.rows.length === 0){\r\n            console.log(\"Keine Topics gefunden\");\r\n            return res.status(404).json({message: \"Language not found\"});\r\n        }\r\n\r\n        return res.status(200).json({message: \"\", projects: result.rows });\r\n\r\n    } catch(err){\r\n        return res.status(500).json({message: 'Internal Server Error'});\r\n\r\n    }\r\n})\r\n\r\n\r\napp.listen(port, () => {\r\n    console.log(`Server running on http://localhost:${port}`);\r\n})\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/backend/server.js b/backend/server.js
+--- a/backend/server.js	
++++ b/backend/server.js	
+@@ -13,7 +13,7 @@
+     user : "postgres",
+     host : "localhost",
+     database : "PortfolioProjects",
+-    password: "bonez187"//process.env.DATABASE_PW
++    password: /*process.env.DATABASE_PW*/ "bonez187"
+ });
+ 
+ db.connect();
+Index: frontend/src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import logo from './logo.svg';\r\nimport {BrowserRouter as Router, Routes, Route} from \"react-router-dom\";\r\nimport Header from \"./Header.js\";\r\nimport Home from \"./Home.js\"\r\nimport Footer from \"./Footer.js\";\r\nimport Portfolio from \"./Portfolio\";\r\nimport UeberMich from \"./UeberMich\";\r\nimport PortfolioSiteTopic from \"./components/PortfolioSiteTopic\";\r\n\r\nfunction App() {\r\n  return (\r\n      <Router>\r\n          <Header />\r\n\r\n\r\n        <Routes>\r\n            <Route path=\"/\" element={<Home />} />\r\n            <Route path=\"/über-mich\" element={<UeberMich />} />\r\n            <Route path=\"/portfolio\" element={<Portfolio />} />\r\n\r\n            <Route path=\"/python\" element={<PortfolioSiteTopic />} />\r\n            <Route path=\"/javascript\" element={<PortfolioSiteTopic />} />\r\n            <Route path=\"/cpp\" element={<PortfolioSiteTopic />} />\r\n\r\n            <Route path=\"/ethical-hacking\" element={<Portfolio />} />\r\n            <Route path=\"/react-express\" element={<Portfolio />} />\r\n            <Route path=\"/spiele\" element={<Portfolio />} />\r\n            <Route path=\"/gui-programmierung\" element={<Portfolio />} />\r\n            <Route path=\"/web-scraping\" element={<Portfolio />} />\r\n            <Route path=\"/data-analysis\" element={<Portfolio />} />\r\n\r\n        </Routes>\r\n\r\n          <Footer />\r\n\r\n      </Router>\r\n\r\n  );\r\n}\r\n\r\nexport default App;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frontend/src/App.js b/frontend/src/App.js
+--- a/frontend/src/App.js	
++++ b/frontend/src/App.js	
+@@ -6,6 +6,7 @@
+ import Portfolio from "./Portfolio";
+ import UeberMich from "./UeberMich";
+ import PortfolioSiteTopic from "./components/PortfolioSiteTopic";
++import ExplanationSite from "./components/ExplanationSite";
+ 
+ function App() {
+   return (
+@@ -17,6 +18,7 @@
+             <Route path="/" element={<Home />} />
+             <Route path="/über-mich" element={<UeberMich />} />
+             <Route path="/portfolio" element={<Portfolio />} />
++            <Route path="/explanation" element={<ExplanationSite />} />
+ 
+             <Route path="/python" element={<PortfolioSiteTopic />} />
+             <Route path="/javascript" element={<PortfolioSiteTopic />} />
+Index: frontend/src/assets/css/BlogPostPage.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frontend/src/assets/css/BlogPostPage.css b/frontend/src/assets/css/BlogPostPage.css
+new file mode 100644
+--- /dev/null	
++++ b/frontend/src/assets/css/BlogPostPage.css	
+@@ -0,0 +1,33 @@
++.blog-post-page {
++  border: 1px solid #ddd;
++  border-radius: 8px;
++  padding: 20px;
++  margin: 20px auto;
++  background-color: #f9f9f9;
++  max-width: 800px;
++  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
++}
++
++.blog-post-page-title {
++  font-size: 2.5em;
++  margin-bottom: 10px;
++}
++
++.blog-post-page-meta {
++  font-size: 1em;
++  color: #666;
++  margin-bottom: 20px;
++}
++
++.blog-post-page-author {
++  font-weight: bold;
++  margin-right: 10px;
++}
++
++.blog-post-page-date {
++  font-style: italic;
++}
++
++.blog-post-page-content {
++  line-height: 1.8;
++}

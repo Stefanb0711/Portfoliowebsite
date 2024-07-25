@@ -1,0 +1,33 @@
+.blog-post-page {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-page-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.blog-post-page-meta {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.blog-post-page-author {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.blog-post-page-date {
+  font-style: italic;
+}
+
+.blog-post-page-content {
+  line-height: 1.8;
+}

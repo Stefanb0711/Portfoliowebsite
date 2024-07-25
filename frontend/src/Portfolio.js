@@ -32,9 +32,6 @@ function Portfolio(){
 
     setFilterStatus("languages");
 
-    console.log("Eine ausgewählte Sprache: ", response.data["languages"][0]["language"]);
-
-
 
     }
 
@@ -81,12 +78,6 @@ function Portfolio(){
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul>{/* End Portfolio Filters */}
 
             {filterStatus === "properties" && (
                 <div>

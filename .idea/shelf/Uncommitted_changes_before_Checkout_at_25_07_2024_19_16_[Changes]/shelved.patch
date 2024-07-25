@@ -1,0 +1,149 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3\" name=\"Changes\" comment=\"PortfoliositeTopic funktioniert\">\r\n      <change afterPath=\"$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/frontend/src/components/TopicTag.jsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JSX File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"PortfolioCard-Anpassungen\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"MIXED\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2jfYqHeNw0SvCqWisfhdJRvsU1y\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"Sortieren-Nach-Thema\",\r\n    \"last_opened_file_path\": \"C:/Users/stefa/Dropbox/portfoliowebsite/portfoliowebsite\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"ts.external.directory.path\": \"C:\\\\Program Files\\\\JetBrains\\\\PyCharm 2024.1.4\\\\plugins\\\\javascript-plugin\\\\jsLanguageServicesImpl\\\\external\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82\" />\r\n        <option value=\"bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3\" name=\"Changes\" comment=\"\" />\r\n      <created>1721779788245</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1721779788245</updated>\r\n      <workItem from=\"1721779789339\" duration=\"10144000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Es klappt die Daten der Sprachen aus dem Backend zu scrappen\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721822465626</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721822465626</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Kann grob schonmal nach Thema sortieren\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721843032172</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721843032172</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"PortfoliositeTopic funktioniert\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721916968488</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721916968488</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\r\n                <map>\r\n                  <entry key=\"Show.Git.Branches\" value=\"true\" />\r\n                </map>\r\n              </option>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"PortfolioCard-Anpassungen\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Es klappt die Daten der Sprachen aus dem Backend zu scrappen\" />\r\n    <MESSAGE value=\"Sortieren nach Sprache funktioniert\" />\r\n    <MESSAGE value=\"Kann grob schonmal nach Thema sortieren\" />\r\n    <MESSAGE value=\"PortfoliositeTopic funktioniert\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"PortfoliositeTopic funktioniert\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"javascript\">\r\n          <url>file://$USER_HOME$/PycharmProjects/portFolioWebsite/frontend/src/Home.jsx</url>\r\n          <line>36</line>\r\n          <option name=\"timeStamp\" value=\"2\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"javascript\">\r\n          <url>file://$USER_HOME$/Documents/JavascriptProjekte/portFolioWebsite/frontend/src/Home.jsx</url>\r\n          <line>16</line>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,11 +4,16 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="PortfoliositeTopic funktioniert">
+-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/frontend/src/components/TopicTag.jsx" afterDir="false" />
++    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="TopicTags funktionieren">
++      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/BlogPostPage.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioSiteTopic.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioSiteTopic.jsx" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/frontend/src/components/TopicTag.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TopicTag.jsx" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -19,6 +24,7 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="JSX File" />
++        <option value="CSS File" />
+       </list>
+     </option>
+   </component>
+@@ -43,7 +49,8 @@
+   "keyToString": {
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "git-widget-placeholder": "Sortieren-Nach-Thema",
+-    "last_opened_file_path": "C:/Users/stefa/Dropbox/portfoliowebsite/portfoliowebsite",
++    "last_opened_file_path": "C:/Users/stefa/PycharmProjects/expressbackend2",
++    "list.type.of.created.stylesheet": "CSS",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -53,6 +60,12 @@
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\backend" />
++      <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src\assets\css" />
++    </key>
++  </component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -95,7 +108,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1721916968488</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="TopicTags funktionieren">
++      <option name="closed" value="true" />
++      <created>1721920702339</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1721920702339</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -134,7 +155,8 @@
+     <MESSAGE value="Sortieren nach Sprache funktioniert" />
+     <MESSAGE value="Kann grob schonmal nach Thema sortieren" />
+     <MESSAGE value="PortfoliositeTopic funktioniert" />
+-    <option name="LAST_COMMIT_MESSAGE" value="PortfoliositeTopic funktioniert" />
++    <MESSAGE value="TopicTags funktionieren" />
++    <option name="LAST_COMMIT_MESSAGE" value="TopicTags funktionieren" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+Index: frontend/src/components/PortfolioSiteTopic.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React, {useEffect, useState} from \"react\";\r\nimport {useLocation} from \"react-router-dom\";\r\nimport axios from \"axios\";\r\nimport PortfolioCard from \"./PortfolioCard\";\r\n\r\nfunction PortfolioSiteTopic(){\r\n\r\n\r\n    const location = useLocation();\r\n\r\n    const [selectedProjects, setSelectedProjects] = useState([]);\r\n\r\n    async function getTopicProjects(){\r\n        const currentPath = location[\"pathname\"];\r\n\r\n        const data = {path: currentPath};\r\n\r\n        try{\r\n            const response = await axios.post(\"http://localhost:5000/get-topic-projects\", data, {\r\n            headers: {\r\n                \"Content-Type\": \"application/json\",\r\n            }\r\n        } );\r\n\r\n        if (response.data === []){\r\n            console.log(\"Keine Daten gefunden\");\r\n            return;\r\n        }\r\n\r\n        console.log(\"responseDataProjects: \", response.data[\"projects\"]);\r\n\r\n        setSelectedProjects(response.data[\"projects\"]);\r\n\r\n\r\n        } catch(err){\r\n            console.error(err);\r\n        }\r\n\r\n\r\n    }\r\n\r\n    useEffect(() => {\r\n        getTopicProjects();\r\n\r\n\r\n    }, []);\r\n\r\n\r\n    return(\r\n        <div>\r\n\r\n            {selectedProjects.map((project) =>{\r\n                return (<PortfolioCard title={project[\"name\"]} description={project[\"properties\"][0]} image={project[\"property_image\"]} />)\r\n            })}\r\n\r\n\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default PortfolioSiteTopic;
+===================================================================
+diff --git a/frontend/src/components/PortfolioSiteTopic.jsx b/frontend/src/components/PortfolioSiteTopic.jsx
+--- a/frontend/src/components/PortfolioSiteTopic.jsx	
++++ b/frontend/src/components/PortfolioSiteTopic.jsx	
+@@ -50,7 +50,9 @@
+         <div>
+ 
+             {selectedProjects.map((project) =>{
+-                return (<PortfolioCard title={project["name"]} description={project["properties"][0]} image={project["property_image"]} />)
++                return (<PortfolioCard title={project["name"]} description={project["properties"].map((property) => {
++                    return ([property]);
++                })} image={project["property_image"]} />)
+             })}
+ 
+ 
+Index: frontend/src/components/ExplanationSite.jsx
+===================================================================
+diff --git a/frontend/src/components/ExplanationSite.jsx b/frontend/src/components/ExplanationSite.jsx
+--- a/frontend/src/components/ExplanationSite.jsx	
++++ b/frontend/src/components/ExplanationSite.jsx	
+@@ -1,0 +1,20 @@
++import React from 'react';
++import '../assets/css/BlogPostPage.css'; // Optional für CSS-Styling
++
++
++const ExplanationSite = ({ title, author, date, content }) => {
++  return (
++    <div className="blog-post-page">
++      <h1 className="blog-post-page-title">Ein Projekt</h1>
++      <div className="blog-post-page-meta">
++        <span className="blog-post-page-author">By Stefan</span>
++        <span className="blog-post-page-date">{date}</span>
++      </div>
++      <div className="blog-post-page-content">
++        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
++      </div>
++    </div>
++  );
++};
++
++export default ExplanationSite;
+Index: frontend/src/components/TopicTag.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\n\r\nfunction TopicTag(props){\r\n\r\n    const colors = [\r\n        'rgba(0, 255, 0, 0.5)',   // Grün\r\n        'rgba(0, 0, 255, 0.5)',   // Blau\r\n        'rgba(255, 255, 0, 0.5)', // Gelb\r\n        'rgba(255, 0, 0, 0.5)',   // Rot\r\n        'rgba(128, 0, 128, 0.5)', // Lila\r\n        'rgba(0, 255, 255, 0.5)'  // Türkis\r\n    ];\r\n\r\n    const randomColorIndex = Math.floor(Math.random() * colors.length);\r\n\r\n    const badgeStyle = {\r\n        backgroundColor: colors[randomColorIndex], // Fallback-Farbe falls keine bgColor übergeben wird\r\n        color: 'white', // Weißer Text für besseren Kontrast,\r\n        padding: '0.5em 1em',\r\n        orderRadius: '0.25em'\r\n    };\r\n\r\n    return (\r\n        <span style={badgeStyle} className=\"badge rounded-pill\">#{props.topic}</span>\r\n    );\r\n\r\n}\r\n\r\nexport default TopicTag;
+===================================================================
+diff --git a/frontend/src/components/TopicTag.jsx b/frontend/src/components/TopicTag.jsx
+--- a/frontend/src/components/TopicTag.jsx	
++++ b/frontend/src/components/TopicTag.jsx	
+@@ -5,7 +5,6 @@
+     const colors = [
+         'rgba(0, 255, 0, 0.5)',   // Grün
+         'rgba(0, 0, 255, 0.5)',   // Blau
+-        'rgba(255, 255, 0, 0.5)', // Gelb
+         'rgba(255, 0, 0, 0.5)',   // Rot
+         'rgba(128, 0, 128, 0.5)', // Lila
+         'rgba(0, 255, 255, 0.5)'  // Türkis

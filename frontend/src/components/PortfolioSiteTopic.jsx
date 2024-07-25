@@ -9,6 +9,7 @@ function PortfolioSiteTopic(){
     const location = useLocation();
 
     const [selectedProjects, setSelectedProjects] = useState([]);
+    const [properties, setProperties] = useState([]);
 
     async function getTopicProjects(){
         const currentPath = location["pathname"];
@@ -45,16 +46,28 @@ function PortfolioSiteTopic(){
 
     }, []);
 
+    useEffect(() => {
+        console.log("SelectedProjects: ", selectedProjects);
+    }, []);
 
-    return(
+
+    return (
+
         <div>
-
-            {selectedProjects.map((project) =>{
-                return (<PortfolioCard title={project["name"]} description={project["properties"][0]} image={project["property_image"]} />)
-            })}
-
-
+            {selectedProjects.length === 0 ? (
+                <p>Loading projects...</p>
+            ) : (
+                selectedProjects.map((project) => (
+                    <PortfolioCard
+                        key={project.id}
+                        title={project.name}
+                        description={project.properties} // Übergebe properties als Array
+                        image={project.property_image}
+                    />
+                ))
+            )}
         </div>
+
     );
 }
 
