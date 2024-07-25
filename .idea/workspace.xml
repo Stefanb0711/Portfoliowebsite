@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Kann grob schonmal nach Thema sortieren">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioSiteTopic.jsx" afterDir="false" />
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="PortfoliositeTopic funktioniert">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/TopicTag.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721843032172</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="PortfoliositeTopic funktioniert">
+      <option name="closed" value="true" />
+      <created>1721916968488</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721916968488</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +133,8 @@
     <MESSAGE value="Es klappt die Daten der Sprachen aus dem Backend zu scrappen" />
     <MESSAGE value="Sortieren nach Sprache funktioniert" />
     <MESSAGE value="Kann grob schonmal nach Thema sortieren" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kann grob schonmal nach Thema sortieren" />
+    <MESSAGE value="PortfoliositeTopic funktioniert" />
+    <option name="LAST_COMMIT_MESSAGE" value="PortfoliositeTopic funktioniert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
