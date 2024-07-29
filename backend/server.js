@@ -80,12 +80,27 @@ app.post("/get-portfolio-projects-sorted-by-properties", async (req, res) => {
 
 app.post("/get-topic-projects", async (req, res) => {
 
-    const currentTopicName = req.body["path"].split("/")[1];
+    const getData = req.body["path"].split("/")[1];
+
+    function capitalizeAfterHyphens(str) {
+      return str
+        .split('-')
+        .map((part, index) => {
+          if (index === 0) {
+
+            return part.charAt(0).toUpperCase() + part.slice(1);
+          }
+          return part.charAt(0).toUpperCase() + part.slice(1);
+        })
+        .join('-');
+}
+
+    const currentTopicName = capitalizeAfterHyphens(getData);
+
     //currentTopicName = currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
 
 
 
-    console.log("Current Topic Name: ", currentTopicName);
 
     console.log("get-topic-projects erreichbar");
     try{

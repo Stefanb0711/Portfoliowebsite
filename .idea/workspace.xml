@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="FUnktioniert größtenteils">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Zwischenstand">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioSiteTopic.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioSiteTopic.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Fehlerbehebunge",
     "last_opened_file_path": "C:/Users/stefa/Dropbox/portfoliowebsite/portfoliowebsite",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -106,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722253454724</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Zwischenstand">
+      <option name="closed" value="true" />
+      <created>1722271485221</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722271485221</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +151,8 @@
     <MESSAGE value="PortfoliositeTopic funktioniert" />
     <MESSAGE value="TopicTags funktionieren (wieder)!!" />
     <MESSAGE value="FUnktioniert größtenteils" />
-    <option name="LAST_COMMIT_MESSAGE" value="FUnktioniert größtenteils" />
+    <MESSAGE value="Zwischenstand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zwischenstand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
