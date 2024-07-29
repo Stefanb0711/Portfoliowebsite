@@ -82,7 +82,7 @@ function Portfolio(){
             {filterStatus === "properties" && (
                 <div>
                     {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard title={projectGroup["main_topic"]} description=""
+                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["main_topic"]} description=""
                                                image={projectGroup["property_image"]}/>)
                     })}
                 </div>
@@ -92,7 +92,7 @@ function Portfolio(){
             {filterStatus === "languages" && (
                 <div>
                     {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard title={projectGroup["language"]} description=""
+                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
                                                image={projectGroup["language_image"]} />)
                     })}
                 </div>

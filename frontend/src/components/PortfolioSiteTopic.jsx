@@ -18,7 +18,7 @@ function PortfolioSiteTopic(){
 
 
         try{
-            const response = await axios.post("http://localhost:5000/get-topic-projects", data, {
+            const response= await axios.post("http://localhost:5000/get-topic-projects", data, {
             headers: {
                 "Content-Type": "application/json",
             }

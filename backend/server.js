@@ -81,6 +81,9 @@ app.post("/get-portfolio-projects-sorted-by-properties", async (req, res) => {
 app.post("/get-topic-projects", async (req, res) => {
 
     const currentTopicName = req.body["path"].split("/")[1];
+    //currentTopicName = currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
+
+
 
     console.log("Current Topic Name: ", currentTopicName);
 

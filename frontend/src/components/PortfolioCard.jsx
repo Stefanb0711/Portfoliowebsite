@@ -6,7 +6,6 @@ function PortfolioCard(props){
 
     const description = Array.from(props.description);
 
-    console.log('Type of props.title:', typeof props.title);
     const title = String(props.title).toLowerCase();
 
     return (
