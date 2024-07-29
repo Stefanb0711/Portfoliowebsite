@@ -66,7 +66,7 @@ function Portfolio(){
     return(
         <section id="portfolio" class="portfolio section">
 
-          <SortByInput sortByLanguage={getLanguages} sortByProperties={getProperties} />
+            <SortByInput sortByLanguage={getLanguages} sortByProperties={getProperties} />
 
       {/* Section Title */}
       <div class="container section-title" >
@@ -82,7 +82,7 @@ function Portfolio(){
             {filterStatus === "properties" && (
                 <div>
                     {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard title={projectGroup["properties"]} description=""
+                        return (<PortfolioCard title={projectGroup["main_topic"]} description=""
                                                image={projectGroup["property_image"]}/>)
                     })}
                 </div>

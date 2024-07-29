@@ -63,7 +63,7 @@ app.post("/get-portfolio-projects-sorted-by-properties", async (req, res) => {
 
     try{
 
-        const result = await db.query("SELECT DISTINCT properties, property_image FROM projects");
+        const result = await db.query("SELECT DISTINCT main_topic, property_image FROM projects");
 
         if(result.rows.length === 0){
             console.log("Keine Sprachen gefunden");
@@ -86,7 +86,7 @@ app.post("/get-topic-projects", async (req, res) => {
 
     console.log("get-topic-projects erreichbar");
     try{
-        const result = await db.query('SELECT * FROM projects WHERE language = $1 OR $2 = ANY(properties) ', [currentTopicName, currentTopicName]);
+        const result = await db.query('SELECT * FROM projects WHERE language = $1 OR main_topic = $2', [currentTopicName, currentTopicName]);
 
         if(result.rows.length === 0){
             console.log("Keine Topics gefunden");

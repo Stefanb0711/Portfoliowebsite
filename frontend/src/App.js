@@ -26,7 +26,8 @@ function App() {
             <Route path="/cpp" element={<PortfolioSiteTopic />} />
 
             <Route path="/ethical-hacking" element={<PortfolioSiteTopic />} />
-            <Route path="/react-express" element={<PortfolioSiteTopic />} />
+            <Route path="/react" element={<PortfolioSiteTopic />} />
+            <Route path="/express" element={<PortfolioSiteTopic />} />
             <Route path="/spiele" element={<PortfolioSiteTopic />} />
             <Route path="/gui-programmierung" element={<PortfolioSiteTopic />} />
             <Route path="/web-scraping" element={<PortfolioSiteTopic />} />

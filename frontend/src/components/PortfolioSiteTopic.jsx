@@ -16,6 +16,7 @@ function PortfolioSiteTopic(){
 
         const data = {path: currentPath};
 
+
         try{
             const response = await axios.post("http://localhost:5000/get-topic-projects", data, {
             headers: {
