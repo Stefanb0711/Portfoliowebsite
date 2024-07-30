@@ -81,6 +81,7 @@ app.post("/get-portfolio-projects-sorted-by-properties", async (req, res) => {
 app.post("/get-topic-projects", async (req, res) => {
 
     const getData = req.body["path"].split("/")[1];
+    const currentTopicName = getData;
 
     function capitalizeAfterHyphens(str) {
       return str
@@ -95,7 +96,12 @@ app.post("/get-topic-projects", async (req, res) => {
         .join('-');
 }
 
-    const currentTopicName = capitalizeAfterHyphens(getData);
+    if (getData !== "python" || getData !== "javascript" || getData !== "c++") {
+
+        const currentTopicName = capitalizeAfterHyphens(getData);
+
+    }
+
 
     //currentTopicName = currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
 
@@ -117,6 +123,11 @@ app.post("/get-topic-projects", async (req, res) => {
         return res.status(500).json({message: 'Internal Server Error'});
 
     }
+})
+
+app.post("/get-topic-projects-by-language", async (req, res) => {
+
+
 })
 
 
