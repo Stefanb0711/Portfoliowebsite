@@ -16,7 +16,12 @@ function TopicTag(props){
         backgroundColor: colors[randomColorIndex], // Fallback-Farbe falls keine bgColor übergeben wird
         color: 'white', // Weißer Text für besseren Kontrast,
         padding: '0.5em 1em',
-        orderRadius: '0.25em'
+        borderRadius: '0.25em',
+        marginLeft: '3px',
+        marginRight: '3px',
+        marginTop: '5px',
+        marginBottom: '6px'
+
     };
 
     return (

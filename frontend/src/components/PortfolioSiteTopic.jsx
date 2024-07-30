@@ -63,7 +63,7 @@ function PortfolioSiteTopic(){
                         key={project.id}
                         title={project.name}
                         description={project.properties} // Übergebe properties als Array
-                        image={project.property_image}
+                        image={project.project_image}
                     />
                 ))
             )}
