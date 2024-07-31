@@ -59,14 +59,14 @@ function Portfolio(){
             console.error(err);
         }
 
-
-
     }
 
     return(
-        <section id="portfolio" class="portfolio section">
+        <section style={{position: "relative"}} id="portfolio" class="portfolio section">
 
-            <SortByInput sortByLanguage={getLanguages} sortByProperties={getProperties} />
+            <div>
+                <SortByInput sortByLanguage={getLanguages} sortByProperties={getProperties} />
+            </div>
 
       {/* Section Title */}
       <div class="container section-title" >
