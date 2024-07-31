@@ -81,34 +81,30 @@ app.post("/get-portfolio-projects-sorted-by-properties", async (req, res) => {
 app.post("/get-topic-projects", async (req, res) => {
 
     const getData = req.body["path"].split("/")[1];
-    const currentTopicName = getData;
+    let currentTopicName = getData; // Verwende let, um die Variable später ändern zu können
+
+    console.log("GetData: ", getData);
 
     function capitalizeAfterHyphens(str) {
-      return str
-        .split('-')
-        .map((part, index) => {
-          if (index === 0) {
-
-            return part.charAt(0).toUpperCase() + part.slice(1);
-          }
-          return part.charAt(0).toUpperCase() + part.slice(1);
-        })
-        .join('-');
-}
-
-    if (getData !== "python" || getData !== "javascript" || getData !== "c++") {
-
-        const currentTopicName = capitalizeAfterHyphens(getData);
-
+        return str
+            .split('-')
+            .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+            .join('-');
     }
 
+    if (getData !== "python" && getData !== "javascript" && getData !== "c++") {
+        console.log("Condition met: getData is not python, javascript, or c++");
+        currentTopicName = capitalizeAfterHyphens(getData);
+    } else {
+        console.log("Condition not met: getData is one of python, javascript, or c++");
+    }
 
-    //currentTopicName = currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
+    console.log("CurrentTopicName: ", currentTopicName);
+
+        //currentTopicName = currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
 
 
 
-
-    console.log("get-topic-projects erreichbar");
     try{
         const result = await db.query('SELECT * FROM projects WHERE language = $1 OR main_topic = $2', [currentTopicName, currentTopicName]);
 
