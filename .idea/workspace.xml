@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Thema bug gefixt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/clients/client-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/clients/client-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/clients/client-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/clients/client-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/clients/client-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/clients/client-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/clients/client-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/clients/client-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/portfolio/app-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/portfolio/books-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/portfolio/branding-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/portfolio/product-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/team/team-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/team/team-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/team/team-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/team/team-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/testimonials/testimonials-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/testimonials/testimonials-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/testimonials/testimonials-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/testimonials/testimonials-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/testimonials/testimonials-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/sortByInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/sortByInput.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Kleinere Fixes und hinzufügen von Projektbildern" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722422479416</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Kleinere Fixes und hinzufügen von Projektbildern">
+      <option name="closed" value="true" />
+      <created>1722426701933</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722426701933</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +197,8 @@
     <MESSAGE value="Bug gefixt" />
     <MESSAGE value="Programmiersprachesortierung bug gefixt" />
     <MESSAGE value="Thema bug gefixt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thema bug gefixt" />
+    <MESSAGE value="Kleinere Fixes und hinzufügen von Projektbildern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kleinere Fixes und hinzufügen von Projektbildern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
