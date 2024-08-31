@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Kleinere Fixes und hinzufügen von Projektbildern" />
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Kleinere Fixes und hinzufügen von Projektbildern">
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/remoteCafeFinder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_07_2024_19_16_[Changes]1/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_07_2024_19_16_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_07_2024_19_16__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_07_2024_19_18_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_07_2024_19_18__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Fehlerbehebunge",
-    "last_opened_file_path": "C:/Users/stefa/Dropbox/portfoliowebsite/portfoliowebsite",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Fehlerbehebunge&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/stefa/OneDrive/Dokumente/Python/CafeAndWifiWebsiteNew&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\public\assets\img" />
@@ -71,6 +80,15 @@
       <updated>1721779788245</updated>
       <workItem from="1721779789339" duration="10144000" />
       <workItem from="1722250367888" duration="2816000" />
+      <workItem from="1722891625706" duration="63000" />
+      <workItem from="1722989563629" duration="539000" />
+      <workItem from="1723127241535" duration="1261000" />
+      <workItem from="1723554580380" duration="676000" />
+      <workItem from="1723559314095" duration="934000" />
+      <workItem from="1723659726319" duration="572000" />
+      <workItem from="1724253609680" duration="1775000" />
+      <workItem from="1725058956211" duration="12000" />
+      <workItem from="1725059236024" duration="1483000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -152,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722426701933</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Kleinere Fixes und hinzufügen von Projektbildern">
+      <option name="closed" value="true" />
+      <created>1722426723189</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722426723189</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
