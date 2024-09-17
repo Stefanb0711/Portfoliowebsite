@@ -29,7 +29,6 @@ const ExplanationSite = ({ title, author, date, content }) => {
       <div className="blog-post-page">
           {postsData["posts"].map((post, postIndex) => (
               <div key={postIndex}>
-                  <h1>{post.title}</h1>
                   <div>
                       <span>By {post.author}</span> | <span>{post.date}</span>
                   </div>

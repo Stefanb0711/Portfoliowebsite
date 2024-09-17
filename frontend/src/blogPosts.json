@@ -7,7 +7,9 @@
       "date": "2023-08-31",
       "postContent": [
         { "type": "h1", "content": "Wetterapp React" },
-        { "type": "a", "href": "https://github.com/Stefanb0711/WetterAppReactExpress.git" },
+        { "type": "a", "href": "https://github.com/Stefanb0711/WetterAppReactExpress.git",
+          "content": "Githublink"
+        },
         {"type": "img", "content": ""},
         { "type": "h2", "content": "Funktionalität" },
         { "p": "h2", "content": "-Suchleiste, die bei jedem eingegebenen Suchbegriff auf die Openweatherapi zugreift und passende Suchvorschläge ausspuckt (in Echtzeit)\n- eine Wetterkarte mit den Daten der Api\n" },

@@ -7,6 +7,8 @@ import Portfolio from "./Portfolio";
 import UeberMich from "./UeberMich";
 import PortfolioSiteTopic from "./components/PortfolioSiteTopic";
 import ExplanationSite from "./components/ExplanationSite";
+import posts from "./blogPosts.json"
+import PortfolioExplanation from "./components/PortfolioExplanation";
 
 function App() {
   return (
@@ -18,6 +20,14 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/über-mich" element={<UeberMich />} />
             <Route path="/portfolio" element={<Portfolio />} />
+
+            {posts["posts"].map((post) => (
+                <Route
+                    key={post.id}
+                    path={`/portfolio/${post.id}`}
+                    element={<PortfolioExplanation post={post} />}
+                />
+            ))}
 
             <Route path="/explanation" element={<ExplanationSite />} />
 
