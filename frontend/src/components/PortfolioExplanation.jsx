@@ -19,6 +19,8 @@ const PortfolioExplanation = ({post}) => {
                       return <h2 key={blockIndex}>{block.content}</h2>;
                   case 'p':
                       return <p key={blockIndex}>{block.content}</p>;
+                  case 'a':
+                      return <a key={blockIndex} href={block.href}>{block.href}</a>;
                   case 'ul':
                       return (
                           <ul key={blockIndex}>
@@ -28,7 +30,13 @@ const PortfolioExplanation = ({post}) => {
                           </ul>
                       );
                   case 'img':
-                      return <img key={blockIndex} src={block.src} alt={block.alt}/>;
+                      return <img key={blockIndex} src={block.src} alt={block.alt}
+                      style={{
+                          maxWidth: block.width ? `${block.width}px` : '100%', // Setze die maximale Breite
+                          height: 'auto', // Behalte das Seitenverhältnis bei
+                          objectFit: 'cover' // Optional, um sicherzustellen, dass das Bild richtig skaliert
+                        }}
+                      />;
                   default:
                       return null;
               }

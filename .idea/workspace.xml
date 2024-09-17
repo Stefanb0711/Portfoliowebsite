@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Zwischenstand vor dynamische URLS">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" afterDir="false" />
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Portfolioprojekte nach Ids auf seiten verteilt, durch dynamische urls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/blogPosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/blogPosts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +97,7 @@
       <workItem from="1725058956211" duration="12000" />
       <workItem from="1725059236024" duration="1483000" />
       <workItem from="1725235463826" duration="11841000" />
-      <workItem from="1726553591725" duration="4207000" />
+      <workItem from="1726553591725" duration="11972000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -197,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726553732785</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Portfolioprojekte nach Ids auf seiten verteilt, durch dynamische urls">
+      <option name="closed" value="true" />
+      <created>1726558009613</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1726558009613</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +250,8 @@
     <MESSAGE value="Thema bug gefixt" />
     <MESSAGE value="Kleinere Fixes und hinzufügen von Projektbildern" />
     <MESSAGE value="Zwischenstand vor dynamische URLS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zwischenstand vor dynamische URLS" />
+    <MESSAGE value="Portfolioprojekte nach Ids auf seiten verteilt, durch dynamische urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Portfolioprojekte nach Ids auf seiten verteilt, durch dynamische urls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
