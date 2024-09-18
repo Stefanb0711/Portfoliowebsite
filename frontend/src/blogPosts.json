@@ -10,9 +10,9 @@
         { "type": "a", "href": "https://github.com/Stefanb0711/WetterAppReactExpress.git",
           "content": "Githublink"
         },
-        {"type": "img", "src": "/assets/img/FrontendBackend/reactWetterApp/suchvorschlägeStadt.png"},
+        {"type": "img", "src": "/assets/img/FrontendBackend/reactWetterApp/suchvorschlägeStadt.jpg"},
         { "type": "h2", "content": "Funktionalität" },
-        { "p": "h2", "content": "-Suchleiste, die bei jedem eingegebenen Suchbegriff auf die Openweatherapi zugreift und passende Suchvorschläge ausspuckt (in Echtzeit)\n- eine Wetterkarte mit den Daten der Api\n" },
+        { "p": "h2", "content": "-Suchleiste, die bei jedem eingegebenen Suchbegriff auf die Openweatherapi zugreift und passende Suchvorschläge ausgibt (in Echtzeit)\n- eine Wetterkarte mit den Daten der Api\n" },
 
         { "type": "ul", "content": [
             "Suchleiste, die bei jedem eingegebenen Suchbegriff auf die OpenWeatherAPI zugreift.",
@@ -61,9 +61,9 @@
       "date": "2023-09-01",
       "postContent": [
         { "type": "h1", "content": "AWB-It Website" },
-        { "type": "a", "content": "https://github.com/Stefanb0711/AWB-ItWebsite.git"},
+        { "type": "a", "href": "https://github.com/Stefanb0711/AWB-ItWebsite.git", "content": "https://github.com/Stefanb0711/AWB-ItWebsite.git"},
         { "type": "h3", "content": "Das ist eine Website die für eine realte It-Firma erstellt wurde."},
-        { "type": "img", "src": "/assets/img/awbItStartseite"},
+        { "type": "img", "src": "/assets/img/awbItStartseite.png"},
         { "type": "h2", "content": "Funktionalität und Features" },
         { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/dnsChecking.png"},
         { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/EmailSenden.png"},
@@ -95,17 +95,19 @@
         { "type": "a", "href": "https://github.com/Stefanb0711/eCommerceWebsite.git"},
         { "type": "img", "src": "/assets/img/eCommerceStart.png" },
         { "type": "h2", "content": "Funktionalitäten" },
-        { "type": "p", "content": "- Erstellen eines Kundenkontos\n- Das hinzufügen von Waren in einen Warenkorb\n- Das bezahlen der Summe mit Paypal (Testkonto)\n" },
+        { "type": "p", "content": "- Erstellen eines Kundenkontos" },
+        { "type": "p", "content": "- Das hinzufügen von Waren in einen Warenkorb" },
         { "type": "img", "src": "/assets/img/FrontendBackend/eCommerceWebsite/warenkorb.png"},
-        { "type": "img", "src": "/assets/img/FrontendBackend/eCommerceWebsite/paymentFunktion.png"},
         { "type": "img", "src": "/assets/img/FrontendBackend/eCommerceWebsite/hinzufügenVonBenutzern.png"},
-        { "type": "img", "src": "/assets/img/FrontendBackend/eCommerceWebsite/verwendenVonEnvVariablen.png"},
+
+        { "type": "p", "content": "- Das bezahlen der Summe mit Paypal (Testkonto)\n" },
+
         { "type": "h2", "content": "Herauforderungen" },
-        { "type":  "p", "content":  "-Datenbankstrukturmanagment\n-Paypal Payment"},
-        { "type": "img", "src": "https://via.placeholder.com/800x400"},
+        { "type":  "p", "content":  "-Datenbankstrukturmanagment"},
+        { "type":  "p", "content":  "-Paypal Payment"},
+        { "type": "img", "src": "/assets/img/FrontendBackend/eCommerceWebsite/paymentFunktion.png"},
+        { "type": "img", "src": "/assets/img/FrontendBackend/eCommerceWebsite/verwendenVonEnvVariablen.png"},
 
-
-        { "type": "img", "src": "https://via.placeholder.com/800x400", "alt": "App Screenshot" },
         { "type": "h2", "content": "Fazit" },
         { "type": "p", "content": "Zusammenfassung und Schlussfolgerungen des Projekts." }
       ]
@@ -125,14 +127,13 @@
         { "type": "p", "content": "- Der Benutzer hat die Möglichkeit Todolisten zu erstellen, und diesen ein Icon zuzuordnen\n- Sowohl die Todlisten als auch die Todlistenelemente können gelöscht werden" },
         { "type": "img", "content": "", "src": "https://via.placeholder.com/800x400"},
         { "type": "h2", "content": "Herauforderungen" },
-        { "type": "img", "src": "/assets/img/FrontendBackend/TodoListFlask/erledigtUnerledigt.png"},
-        { "type": "img", "src": "/assets/img/FrontendBackend/TodoListFlask/oneToManyRealatitionsship.png"},
 
         { "type":  "p", "content":  "- one-to-many-relationships in Datenbanken"},
-        { "type": "img", "src": "https://via.placeholder.com/800x400"},
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodoListFlask/oneToManyRealatitionsship.png"},
+        { "type":  "p", "content":  "- Managment der Todlisten und dessen Elemente"},
 
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodoListFlask/erledigtUnerledigt.png"},
 
-        { "type": "img", "src": "https://via.placeholder.com/800x400", "alt": "App Screenshot" },
         { "type": "h2", "content": "Fazit" },
         { "type": "p", "content": "Zusammenfassung und Schlussfolgerungen des Projekts." }
       ]
@@ -146,20 +147,16 @@
       "postContent": [
         { "type": "h1", "content": "Cafe-Finder mit Remoteworkgelegenheiten" },
         { "type": "a", "href": "https://github.com/Stefanb0711/Python-WifiCafeFinderUsingAPI.git"},
-        { "type": "img", "src": "https://via.placeholder.com/800x400" },
-        { "type": "img", "src": "/assets/img/remoteCafeFinder"},
+        { "type": "img", "src": "/assets/img/remoteCafeFinder.png"},
 
         { "type": "h2", "content": "Funktionalitäten" },
-        { "type": "img", "src": "/assets/img/FrontendBackend/remoteCafeFinder/cafeCard.png"},
 
         { "type": "p", "content": "- In einem Suchdialog kann man seine Stadt angeben, und mittels einer Api werden Cafes vorgeschlagen mit Remoteworkgelegenheiten\n- Die Infokarten zeigen je nach Verfügbarkeit in der Api, ein Bild, eine Kurzbeschreibung, die Adresse, sowie eine Sternebewertung des Cafes\n" },
-        { "type": "img", "content": "", "src": "https://via.placeholder.com/800x400"},
         { "type": "h2", "content": "Herauforderungen" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/remoteCafeFinder/cafeCard.png"},
+
         { "type":  "p", "content":  "- die richtige Api finden\n- das ansprechende gestalten der Karten, mit den Cafeinfos\n"},
-        { "type": "img", "src": "https://via.placeholder.com/800x400"},
 
-
-        { "type": "img", "src": "https://via.placeholder.com/800x400", "alt": "App Screenshot" },
         { "type": "h2", "content": "Fazit" },
         { "type": "p", "content": "Zusammenfassung und Schlussfolgerungen des Projekts." }
       ]
@@ -173,7 +170,7 @@
       "postContent": [
         { "type": "h1", "content": "Farberkenner für Bilder" },
         { "type": "a", "href": "https://github.com/Stefanb0711/ImageColorPaletteGenerator.git"},
-        { "type": "img", "src": "/assets/img/FrontendBackend/colorPaletteGeneratorStartBild.png" },
+        { "type": "img", "src": "/assets/img/colorPaletteGeneratorStartBild.png" },
         { "type": "h2", "content": "Funktionalitäten" },
         { "type": "p", "content": "- mittels Datei-Dialog kann ein Bild hochgeladen werden\n- es werden die 5 häufigsten Farbwerte des Bildes ausgegeben\n\t" },
         { "type": "img", "content": "", "src": "https://via.placeholder.com/800x400"},
@@ -330,7 +327,7 @@
       "postContent": [
         { "type": "h1", "content": "Space Invaders" },
         { "type": "a", "href": "https://github.com/Stefanb0711/SpaceInvaders.git"},
-        { "type": "img", "src": "/assets/img/Spiele/spaceInvadersStartBild.png" },
+        { "type": "img", "src": "/assets/img/Spiele/SpaceInvaders/spaceInvadersStartBild.png" },
         { "type": "h2", "content": "Beschreibung" },
         { "type": "p", "content": "- ein klassisches Arcadegame bei dem der Spieler seine Feinde abschießen , und dabei vor gegnerischen Angriffen ausweichen muss." },
         { "type": "img", "content": "", "src": "https://via.placeholder.com/800x400"},

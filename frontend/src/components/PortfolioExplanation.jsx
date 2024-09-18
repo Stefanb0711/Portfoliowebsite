@@ -5,6 +5,18 @@ import '../assets/css/BlogPostPage.css'; // Optional für CSS-Styling
 
 const PortfolioExplanation = ({post}) => {
 
+    const centerElements = {
+        alignText: 'center', // Setze die maximale Breite
+        justifyContent: 'center',
+        display: 'flex'
+    }
+
+    const centerElementsWithBottomSpace = {
+        alignText: 'center', // Setze die maximale Breite
+        justifyContent: 'center',
+        display: 'flex',
+        marginBottom: '20px'
+    }
 
 
   return (
@@ -14,13 +26,15 @@ const PortfolioExplanation = ({post}) => {
         {post.postContent.map((block, blockIndex) => {
               switch (block.type) {
                   case 'h1':
-                      return <h1 key={blockIndex}>{block.content}</h1>;
+                      return <h1 key={blockIndex}
+                      style={centerElements}
+                      >{block.content}</h1>;
                   case 'h2':
                       return <h2 key={blockIndex}>{block.content}</h2>;
                   case 'p':
                       return <p key={blockIndex}>{block.content}</p>;
                   case 'a':
-                      return <a key={blockIndex} href={block.href}>{block.href}</a>;
+                      return <a key={blockIndex} href={block.href} style={centerElementsWithBottomSpace} >{block.href}</a>;
                   case 'ul':
                       return (
                           <ul key={blockIndex}>
