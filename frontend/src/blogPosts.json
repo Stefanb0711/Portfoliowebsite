@@ -35,20 +35,25 @@
         { "type": "img", "src": "/assets/img/FrontendBackend/TodoListReact/todoListStartseite.png"},
         { "type": "h2", "content": "Funktionalität" },
         { "type": "img", "src": "/assets/img/FrontendBackend/TodoListReact/passwortFeld.png"},
+        { "type": "p", "content": "- Passwortfeld das je nach Stärke des Passworts die Farbe ändert" },
+
         { "type": "img", "src": "/assets/img/FrontendBackend/TodoListReact/suchLeiste.png"},
+        { "type": "p", "content": "- Suchleiste die während der Eingabe die Todolisten filtert" },
+
         { "type": "img", "src": "/assets/img/FrontendBackend/TodoListReact/todoListUnangemeldet.png"},
+        { "type": "p", "content": "- Registrierungs/-Login Möglichkeiten" },
         { "type": "img", "src": "/assets/img/FrontendBackend/TodoListReact/passwordHashing.png"},
+        { "type": "p", "content": "- Passwordhashing" },
 
-        { "type": "p", "content": "Dieses Projekt dreht sich um eine andere App." },
         { "type": "h2", "content": "Herauforderungen" },
+        { "type": "p", "content": "- Routing in React" },
         { "type": "img", "src": "/assets/img/FrontendBackend/TodoListReact/reactRouting.png"},
-        { "type": "img", "src": "/assets/img/FrontendBackend/TodoListReact/apiCalls2.png"},
+        { "type": "p", "content": "- eigene API erstellen" },
 
-        { "type": "ul", "content": [
-            "Feature 1: Beschreibung des ersten Features.",
-            "Feature 2: Beschreibung des zweiten Features."
-        ]},
-        { "type": "img", "src": "https://via.placeholder.com/800x400", "alt": "App Screenshot" },
+        { "type": "p", "content": "- Error-Handling in der API" },
+        { "type": "p", "content": "- Live-Funktionalitäten" },
+
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodoListReact/apiCalls2.png"},
         { "type": "h2", "content": "Fazit" },
         { "type": "p", "content": "Zusammenfassung und Schlussfolgerungen des Projekts." }
       ]
@@ -65,21 +70,19 @@
         { "type": "h3", "content": "Das ist eine Website die für eine realte It-Firma erstellt wurde."},
         { "type": "img", "src": "/assets/img/awbItStartseite.png"},
         { "type": "h2", "content": "Funktionalität und Features" },
-        { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/dnsChecking.png"},
-        { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/EmailSenden.png"},
+
         { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/formularCheckenAufVollständigkeit.png"},
-        { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/Sicherheitsfeatures.png"},
 
         { "type": "p", "content": "Diese Website beinhaltet Sicherheitsfeatures die ich durch ein Vulnerabilityscan mit OpenVas identifizieren konnte.\nDiese Sicherheitsfeatures werden angewandt nach jedem Routeseitenaufruf.\n" },
-        { "type": "img", "content": ""},
+        { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/Sicherheitsfeatures.png"},
         { "type": "p", "content": "Bei dem Kontaktformular wird eine DNS-Abfrage durchgeführt, die checkt ob eine email potenziell verfügbar ist. Das schützt den Kunden vor Spams von Kontaktformulareinträgen die nicht ernst gemeint sind etc…\n\n- Eine Bestätigungsmail an den Kunden senden, dass alles geklappt hat, und an den Firmenchef, mit Details der Kundennachricht" },
-        { "type": "img", "content": ""},
-
+        { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/dnsChecking.png"},
+        { "type": "img", "src": "/assets/img/FrontendBackend/AWB-IT-Website/EmailSenden.png"},
         { "type": "h2", "content": "Herauforderungen" },
         { "type": "ul", "content": [
-            " -Dns-Abfrage \n Das gedownloadede Template entsprechend den Kundenwünschen anpassen"
+            " -Dns-Abfrage",
+            " -Das gedownloadede Template entsprechend den Kundenwünschen anpassen"
         ]},
-        { "type": "img", "src": "https://via.placeholder.com/800x400", "alt": "App Screenshot" },
         { "type": "h2", "content": "Fazit" },
         { "type": "p", "content": "Zusammenfassung und Schlussfolgerungen des Projekts." }
       ]
@@ -277,10 +280,11 @@
       "postContent": [
         { "type": "h1", "content": "Datenanalyse : Tode in den USA verursacht durch die Polizei" },
         { "type": "a", "href": "https://github.com/Stefanb0711/DataAnalysis/DeathsInvolvinPoliceDataAnalysis.git"},
-        { "type": "img", "src": "/assets/img/DeathsInvolvingPoliceDataAnalysis/weitereGrafik.png" },
+        { "type": "img", "src": "/assets/img/deathsInvolvingPoliceStartBild.png" },
         { "type": "h2", "content": "Was wird analysiert" },
-        { "type": "p", "content": "- was für einen Einfluss die Hautfarbe, Alter, psyche krankheiten auf die Mordrate haben\n- Regionale Unterschiede der Morde in den USA" }
-
+        { "type": "p", "content": "- was für einen Einfluss Hautfarbe, Alter, psychische Krankheiten auf die Mordrate haben" },
+        { "type": "p", "content": "- Regionale Unterschiede der Morde in den USA" },
+        { "type": "img", "src": "/assets/img/DataAnalysis/DeathsInvolvingPoliceDataAnalysis/weitereGrafik.png" }
       ]
     },
 
@@ -290,11 +294,11 @@
       "author": "Stefan",
       "date": "2023-09-01",
       "postContent": [
-        { "type": "h1", "content": "Datenanalyse : Tode in den USA verursacht durch die Polizei" },
+        { "type": "h1", "content": "Datenanalyse der Raumfahrtmissionen von den USA und Russland" },
         { "type": "a", "href": "https://github.com/Stefanb0711/SpaceRaceDataAnalysis.git"},
         { "type": "img", "src": "/assets/img/spaceRaceStartBild.png" },
         { "type": "h2", "content": "Was wird analysiert" },
-        { "type": "p", "content": "-Die Entwicklung der Raumfahrtmissionen über Zeit\n -" }
+        { "type": "p", "content": "- Die Entwicklung der Raumfahrtmissionen über Zeit" }
 
       ]
     },
@@ -312,7 +316,7 @@
         { "type": "p", "content": "- Ein klassisches Arcadegame bei dem das Ziel darin besteht, denn Spielball abzufangen mit einem Pad, bevor er den Boden erreicht." },
         { "type": "img", "content": "", "src": "https://via.placeholder.com/800x400"},
         { "type": "h2", "content": "Herauforderungen" },
-        { "type":  "p", "content":  "- eine präzisse Kollisionserkennung hat deutlich mehr Zeit und Schwierigkeiten bereitet, als Anfangs vermutet. Das hat schließlich gegen Ende des Entwicklungsstadiums dazu geführt, dass ich das Spiel das ursprünglich mit deer Bibliothek Turtle Graphics programmiert habe, nochmal komplett neu mit der Bibliothek Pygame programmiert habe, da diese mehr Flexibilität, und somit eine einigermaßen taugliche Kollisionserkennung programmiert werden konnte."},
+        { "type":  "p", "content":  "- eine präzisse Kollisionserkennung hat deutlich mehr Zeit und Schwierigkeiten bereitet, als Anfangs vermutet. Das hat schließlich gegen Ende des Entwicklungsstadiums dazu geführt, dass ich das Spiel das ursprünglich mit der Bibliothek Turtle Graphics programmiert wurde, nochmal komplett neu mit der Bibliothek Pygame erstellt habe, da diese mehr Flexibilität bot, und somit eine einigermaßen taugliche Kollisionserkennung programmiert werden konnte."},
         { "type": "img", "src": "https://via.placeholder.com/800x400"},
         { "type": "h2", "content": "Fazit" },
         { "type": "p", "content": "Zusammenfassung und Schlussfolgerungen des Projekts." }
@@ -370,8 +374,8 @@
         { "type": "h1", "content": "TicTacToe Objektorientiert" },
         { "type": "a", "href": "https://github.com/Stefanb0711/TicTacToeOOP.git"},
         { "type": "img", "src": "/assets/img/ticTacToeStartbild.png" },
-        { "type": "h2", "content": "Was wird analysiert" },
-        { "type": "p", "content": "- was für einen Einfluss die Hautfarbe, Alter, psyche krankheiten auf die Mordrate haben\n- Regionale Unterschiede der Morde in den USA" }
+        { "type": "h2", "content": "Herausforderungen:" },
+        { "type": "p", "content": "- das Spiel in objektorientiert umzuprogrammieren" }
 
       ]
     },
