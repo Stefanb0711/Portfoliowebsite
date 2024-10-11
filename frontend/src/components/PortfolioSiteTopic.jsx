@@ -62,6 +62,7 @@ function PortfolioSiteTopic(){
                 selectedProjects.map((project) => (
                     <PortfolioCard
                         key={project.id}
+                        id={project.id}
                         title={project.name}
                         description={project.properties} // Übergebe properties als Array
                         image={project.project_image}
