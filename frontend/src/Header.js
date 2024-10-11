@@ -26,19 +26,17 @@ function Header() {
         <header id="header" className="header d-flex align-items-center sticky-top">
             <div className="container-fluid container-xl position-relative d-flex align-items-center">
                 <a href="index.html" className="logo d-flex align-items-center me-auto">
-                    <h1 className="sitename">Arsha</h1>
+                    <h1 className="sitename">Stefans Portfolio</h1>
                 </a>
 
                 <nav id="navmenu" className="navmenu">
                     <ul>
                         <li><Link to="/">Start</Link></li>
                         <li><Link to="/über-mich">Über mich</Link></li>
-                        <li><Link to="/blog">Blog </Link></li>
 
                         <li className="dropdown">
                             <Link to="/portfolio"><span>Portfolio</span> <i className="bi bi-chevron-down toggle-dropdown"></i></Link>
                             <ul>
-                                <li><a href="#">Dropdown 1</a></li>
                                 <li className="dropdown">
                                     <a href="#"><span>Python</span> <i
                                         className="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -69,15 +67,13 @@ function Header() {
                                 <li><a href="#">Ethical Hacking</a></li>
                             </ul>
                         </li>
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
 
-                <a className="btn-getstarted" href="#about">Get Started</a>
             </div>
         </header>
-    );
+    )
 }
 
 export default Header;
