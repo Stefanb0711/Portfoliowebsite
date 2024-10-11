@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
 import Header from "./Header.js";
 import Home from "./Home.js"
 import Footer from "./Footer.js";
@@ -11,6 +11,9 @@ import posts from "./blogPosts.json"
 import PortfolioExplanation from "./components/PortfolioExplanation";
 
 function App() {
+
+
+
   return (
       <Router>
 

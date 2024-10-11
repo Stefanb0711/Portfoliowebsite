@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import SortByInput from "./components/sortByInput";
 import PortfolioCard from "./components/PortfolioCard";
 import axios from "axios";
+import "./assets/css/myStyles.css";
 
 
 function Portfolio(){
@@ -62,7 +63,7 @@ function Portfolio(){
     }
 
     return(
-        <section style={{position: "relative"}} id="portfolio" class="portfolio section">
+        <section style={{position: "relative", margin: "auto"}} id="portfolio" class="portfolio section centerElementsWithBottomSpace">
 
             <div>
                 <SortByInput sortByLanguage={getLanguages} sortByProperties={getProperties} />

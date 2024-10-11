@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Searchinputfield ersetzt">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/main.css" afterDir="false" />
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Sytles funktionieren wieder in explanation-site">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Portfolio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/BlogPostPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/BlogPostPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/myStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/myStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ExplanationSite.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioSiteTopic.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioSiteTopic.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +135,7 @@
       <workItem from="1727454598777" duration="869000" />
       <workItem from="1728418116390" duration="375000" />
       <workItem from="1728583366271" duration="84000" />
-      <workItem from="1728654463327" duration="8728000" />
+      <workItem from="1728654463327" duration="17905000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -277,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728661593166</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Sytles funktionieren wieder in explanation-site">
+      <option name="closed" value="true" />
+      <created>1728668264844</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728668264844</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +311,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="BlogPostExp" />
+                        <option value="Nach-Pause" />
                       </list>
                     </value>
                   </entry>
@@ -330,7 +342,8 @@
     <MESSAGE value="db hinzugefügt" />
     <MESSAGE value="Probleme der Headerleiste gelöst" />
     <MESSAGE value="Searchinputfield ersetzt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Searchinputfield ersetzt" />
+    <MESSAGE value="Sytles funktionieren wieder in explanation-site" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sytles funktionieren wieder in explanation-site" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

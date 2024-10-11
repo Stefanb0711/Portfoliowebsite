@@ -22,7 +22,7 @@ function Header() {
 
 
     return (
-        <header id="header" className="header d-flex align-items-center sticky-top">
+        <header id="header" className="header d-flex align-items-center sticky-top text-center">
             <div className="container-fluid container-xl position-relative d-flex align-items-center">
                 <a href="index.html" className="logo d-flex align-items-center me-auto">
                     <h1 className="sitename">Stefans Portfolio</h1>
@@ -62,7 +62,7 @@ function Header() {
 
 
                                 <li><a href="#">Javascript</a></li>
-                                <li><a href="#">Cpp</a></li>
+                                <li><a href="#">C++</a></li>
                                 <li><a href="#">Ethical Hacking</a></li>
                             </ul>
                         </li>

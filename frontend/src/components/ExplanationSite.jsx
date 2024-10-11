@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import '../assets/css/BlogPostPage.css'; // Optional für CSS-Styling
 import postsData from "../blogPosts.json";
+import Header from "../Header";
 
 
 /*const postContent = [
@@ -25,38 +26,41 @@ const ExplanationSite = ({ title, author, date, content }) => {
 
 
   return (
-
-      <div className="blog-post-page">
-          {postsData["posts"].map((post, postIndex) => (
-              <div key={postIndex}>
-                  <div>
-                      <span>By {post.author}</span> | <span>{post.date}</span>
+      <div>
+          <div className="blog-post-page">
+              {postsData["posts"].map((post, postIndex) => (
+                  <div key={postIndex}>
+                      <div>
+                          <span>By {post.author}</span> | <span>{post.date}</span>
+                      </div>
+                      {post.postContent.map((block, blockIndex) => {
+                          switch (block.type) {
+                              case 'h1':
+                                  return <h1 key={blockIndex}>{block.content}</h1>;
+                              case 'h2':
+                                  return <h2 key={blockIndex}>{block.content}</h2>;
+                              case 'p':
+                                  return <p key={blockIndex}>{block.content}</p>;
+                              case 'ul':
+                                  return (
+                                      <ul key={blockIndex}>
+                                          {block.content.map((item, itemIndex) => (
+                                              <li key={itemIndex}>{item}</li>
+                                          ))}
+                                      </ul>
+                                  );
+                              case 'img':
+                                  return <img key={blockIndex} src={block.src} alt={block.alt}/>;
+                              default:
+                                  return null;
+                          }
+                      })}
                   </div>
-                  {post.postContent.map((block, blockIndex) => {
-                      switch (block.type) {
-                          case 'h1':
-                              return <h1 key={blockIndex}>{block.content}</h1>;
-                          case 'h2':
-                              return <h2 key={blockIndex}>{block.content}</h2>;
-                          case 'p':
-                              return <p key={blockIndex}>{block.content}</p>;
-                          case 'ul':
-                              return (
-                                  <ul key={blockIndex}>
-                                      {block.content.map((item, itemIndex) => (
-                                          <li key={itemIndex}>{item}</li>
-                                      ))}
-                                  </ul>
-                              );
-                          case 'img':
-                              return <img key={blockIndex} src={block.src} alt={block.alt}/>;
-                          default:
-                              return null;
-                      }
-                  })}
-              </div>
-          ))}
+              ))}
+          </div>
+
       </div>
+
 
       /*<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }} className="blog-post-page">
         <h1 style={{ marginTop: '20px' }} className="blog-post-page-title">Projektname</h1>

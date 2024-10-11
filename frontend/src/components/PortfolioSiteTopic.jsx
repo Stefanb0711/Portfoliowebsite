@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {useLocation} from "react-router-dom";
 import axios from "axios";
 import PortfolioCard from "./PortfolioCard";
+import "../assets/css/myStyles.css";
 
 function PortfolioSiteTopic(){
 
@@ -54,7 +55,7 @@ function PortfolioSiteTopic(){
 
     return (
 
-        <div>
+        <div style={{paddingBottom: "20px", margin: "auto", marginLeft: "30px"}}>
             {selectedProjects.length === 0 ? (
                 <p>Loading projects...</p>
             ) : (

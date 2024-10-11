@@ -1,6 +1,7 @@
 import React from "react";
 import {useNavigate, Link} from "react-router-dom";
 import TopicTag from "./TopicTag";
+import "../assets/css/myStyles.css";
 
 function PortfolioCard(props){
 
@@ -9,7 +10,7 @@ function PortfolioCard(props){
     const title = String(props.title).toLowerCase();
 
     return (
-        <div style={{paddingBottom: "20px"}} class="row gy-4 isotope-container" data-aos-delay="200">
+        <div style={{paddingBottom: "20px", margin: "auto"}} class="row gy-4 isotope-container" data-aos-delay="200">
             <Link to={`/${title}`}>
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src={props.image} class="img-fluid" alt=""/>

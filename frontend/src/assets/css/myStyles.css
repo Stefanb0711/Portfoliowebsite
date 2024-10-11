@@ -56,3 +56,26 @@
 }
 
 
+.project-section {
+  max-width: 70%;
+  border: 1px solid #ddd;
+  align-items: center;
+
+}
+
+
+.centerElements {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.centerElementsWithBottomSpace {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+
