@@ -13,13 +13,12 @@ import PortfolioExplanation from "./components/PortfolioExplanation";
 function App() {
   return (
       <Router>
-          <Header />
 
+        <Header />
 
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/über-mich" element={<UeberMich />} />
-            <Route path="/portfolio" element={<Portfolio />} />
 
             {posts["posts"].map((post) => (
                 <Route
@@ -28,6 +27,7 @@ function App() {
                     element={<PortfolioExplanation post={post} />}
                 />
             ))}
+            <Route path="/portfolio" element={<Portfolio />} />
 
             <Route path="/explanation" element={<ExplanationSite />} />
 

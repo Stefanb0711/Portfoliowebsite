@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import '../assets/css/BlogPostPage.css'; // Optional für CSS-Styling
+/*import '../assets/css/main.css';*/
 //import postsData from "../blogPosts.json";
 
 
