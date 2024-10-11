@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import {useNavigate, Link} from "react-router-dom";
 
-
 function Header() {
 
     const navigate = useNavigate();
