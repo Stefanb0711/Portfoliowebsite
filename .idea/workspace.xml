@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Kleine Verbesserungen">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="AngularChatApp Artikel hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/BlogPostPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/BlogPostPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/blogPosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/blogPosts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +129,7 @@
       <workItem from="1727454598777" duration="869000" />
       <workItem from="1728418116390" duration="375000" />
       <workItem from="1728583366271" duration="84000" />
-      <workItem from="1728654463327" duration="40379000" />
+      <workItem from="1728654463327" duration="44571000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -321,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728997966291</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="AngularChatApp Artikel hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1729006109600</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1729006109600</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +390,8 @@
     <MESSAGE value="ScrollToTop funktioniert halb" />
     <MESSAGE value="Footer aktualisiert" />
     <MESSAGE value="Kleine Verbesserungen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kleine Verbesserungen" />
+    <MESSAGE value="AngularChatApp Artikel hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="AngularChatApp Artikel hinzugefügt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

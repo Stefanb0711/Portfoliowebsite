@@ -22,55 +22,55 @@ function Header() {
 
 
     return (
-        <header id="header" className="header d-flex align-items-center sticky-top text-center">
-            <div className="container-fluid container-xl position-relative d-flex align-items-center">
-                <a href="/" className="logo d-flex align-items-center me-auto">
-                    <h1 className="sitename">Stefans Portfolio</h1>
-                </a>
-
-                <nav id="navmenu" className="navmenu">
-                    <ul>
-                        <li><a href="/">Start</a></li>
-                        <li><a href="/über-mich">Über mich</a></li>
-
-                        <li className="dropdown">
-                            <a href="/portfolio"><span>Portfolio</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li className="dropdown">
-                                    <a href="/python"><span>Python</span> <i
-                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
-
-                                </li>
-
-                                <li className="dropdown">
-                                    <a href="/javascript"><span>Javascript</span> <i
-                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
-                                </li>
-
-                                <li className="dropdown">
-                                    <a href="/frontend-backend"><span>Webentwicklung</span> <i
-                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
-                                </li>
-
-                                <li className="dropdown">
-                                    <a href="/dataanalysis"><span>Datenanalyse</span> <i
-                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
-                                </li>
-
-                                <li className="dropdown">
-                                    <a href="/gui"><span>GUI</span> <i
-                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
-                                </li>
+        <header id="header" className=" custom-header header d-flex align-items-center sticky-top text-center">
 
 
-                                <li><a href="#">Ethical Hacking</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
-                </nav>
+            <a href="/" style={{marginLeft: "30px"}} className="logo d-flex align-items-center me-auto">
+                <h1 className="sitename">Stefans Portfolio</h1>
+            </a>
 
-            </div>
+            <nav style={{marginRight: "30px"}} id="navmenu" className="navmenu">
+                <ul>
+                    <li><a href="/">Start</a></li>
+                    <li><a href="/über-mich">Über mich</a></li>
+
+                    <li className="dropdown">
+                        <a href="/portfolio"><span>Portfolio</span> <i
+                            className="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li className="dropdown">
+                                <a href="/python"><span>Python</span> <i
+                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+
+                            </li>
+
+                            <li className="dropdown">
+                                <a href="/javascript"><span>Javascript</span> <i
+                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                            </li>
+
+                            <li className="dropdown">
+                                <a href="/frontend-backend"><span>Webentwicklung</span> <i
+                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                            </li>
+
+                            <li className="dropdown">
+                                <a href="/dataanalysis"><span>Datenanalyse</span> <i
+                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                            </li>
+
+                            <li className="dropdown">
+                                <a href="/gui"><span>GUI</span> <i
+                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                            </li>
+
+
+                            <li><a href="#">Ethical Hacking</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
         </header>
     )
 }

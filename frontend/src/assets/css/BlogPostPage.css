@@ -37,3 +37,14 @@
   margin-bottom: 30px;
 }
 
+.custom-header {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between; /* oder 'center', je nach gewünschtem Verhalten */
+  align-items: center !important;
+}
+
+.custom-header a {
+  margin-right: 10px; /* falls du Abstände zwischen den Links brauchst */
+  white-space: nowrap !important; /* verhindert, dass Text auf mehrere Zeilen umbricht */
+}

@@ -21,19 +21,18 @@ function Footer() {
                     <div className="col-lg-2 col-md-3 footer-links">
                         <h4>Nützliche Links</h4>
                         <ul>
-                            <li><i className="bi bi-chevron-right"></i> <a href="#">Start</a></li>
-                            <li><i className="bi bi-chevron-right"></i> <a href="#">Über mich</a></li>
-                            <li><i className="bi bi-chevron-right"></i> <a href="#">Portfolio</a></li>
+                            <li><i className="bi bi-chevron-right"></i> <a href="/">Start</a></li>
+                            <li><i className="bi bi-chevron-right"></i> <a href="/portfolio">Portfolio</a></li>
                         </ul>
                     </div>
 
                     <div className="col-lg-2 col-md-3 footer-links">
                         <h4>Projektthemen</h4>
                         <ul>
-                            <li><i className="bi bi-chevron-right"></i> <a href="#">Webentwicklung</a></li>
-                            <li><i className="bi bi-chevron-right"></i> <a href="#">Datenanalyse</a></li>
-                            <li><i className="bi bi-chevron-right"></i> <a href="#">Spiele</a></li>
-                            <li><i className="bi bi-chevron-right"></i> <a href="#">Ethical Hacking</a></li>
+                            <li><i className="bi bi-chevron-right"></i> <a href="/frontend-backend">Webentwicklung</a></li>
+                            <li><i className="bi bi-chevron-right"></i> <a href="/dataanalysis">Datenanalyse</a></li>
+                            <li><i className="bi bi-chevron-right"></i> <a href="/gui">Spiele</a></li>
+                            <li><i className="bi bi-chevron-right"></i> <a href="/ethical-hacking">Ethical Hacking</a></li>
                         </ul>
                     </div>
 
