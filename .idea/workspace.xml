@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Headers angepasst, dass er sich bei ExplanationSites nicht verschiebt">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Kleine Anpassungen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/myStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/myStyles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +127,7 @@
       <workItem from="1727454598777" duration="869000" />
       <workItem from="1728418116390" duration="375000" />
       <workItem from="1728583366271" duration="84000" />
-      <workItem from="1728654463327" duration="45926000" />
+      <workItem from="1728654463327" duration="47398000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -336,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729011824611</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Kleine Anpassungen">
+      <option name="closed" value="true" />
+      <created>1729013294022</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729013294022</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +380,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sortieren nach Sprache funktioniert" />
     <MESSAGE value="Kann grob schonmal nach Thema sortieren" />
     <MESSAGE value="PortfoliositeTopic funktioniert" />
     <MESSAGE value="TopicTags funktionieren (wieder)!!" />
@@ -396,7 +404,8 @@
     <MESSAGE value="Kleine Verbesserungen" />
     <MESSAGE value="AngularChatApp Artikel hinzugefügt" />
     <MESSAGE value="Headers angepasst, dass er sich bei ExplanationSites nicht verschiebt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Headers angepasst, dass er sich bei ExplanationSites nicht verschiebt" />
+    <MESSAGE value="Kleine Anpassungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kleine Anpassungen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
