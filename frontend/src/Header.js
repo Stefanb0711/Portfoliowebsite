@@ -29,39 +29,33 @@ function Header() {
                 <h1 className="sitename">Stefans Portfolio</h1>
             </a>
 
-            <nav style={{marginRight: "30px"}} id="navmenu" className="navmenu">
+            <nav style={{marginRight: "70px"}} id="navmenu" className="navmenu">
                 <ul>
                     <li><a href="/">Start</a></li>
                     <li><a href="/über-mich">Über mich</a></li>
 
-                    <li className="dropdown">
-                        <a href="/portfolio"><span>Portfolio</span> <i
-                            className="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
+                    <li style={{marginRight: "60px"}} className="dropdown">
+                        <a href="/portfolio"><span>Portfolio</span> </a>
+                        <ul >
                             <li className="dropdown">
-                                <a href="/python"><span>Python</span> <i
-                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <a href="/python"><span>Python</span> </a>
 
                             </li>
 
                             <li className="dropdown">
-                                <a href="/javascript"><span>Javascript</span> <i
-                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <a href="/javascript"><span>Javascript</span></a>
                             </li>
 
                             <li className="dropdown">
-                                <a href="/frontend-backend"><span>Webentwicklung</span> <i
-                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <a href="/frontend-backend"><span>Webentwicklung</span> </a>
                             </li>
 
                             <li className="dropdown">
-                                <a href="/dataanalysis"><span>Datenanalyse</span> <i
-                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <a href="/dataanalysis"><span>Datenanalyse</span></a>
                             </li>
 
                             <li className="dropdown">
-                                <a href="/gui"><span>GUI</span> <i
-                                    className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <a href="/gui"><span>GUI</span> </a>
                             </li>
 
 
