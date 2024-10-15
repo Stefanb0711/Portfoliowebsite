@@ -391,6 +391,21 @@
         { "type": "h2", "content": "Was wird analysiert" },
         { "type": "p", "content": "- was für einen Einfluss die Hautfarbe, Alter, psyche krankheiten auf die Mordrate haben\n- Regionale Unterschiede der Morde in den USA" }
       ]
+    },
+
+    {
+      "id": 25,
+      "title": "Chat App Angular",
+      "author": "Stefan",
+      "date": "2023-09-01",
+      "postContent": [
+        { "type": "h1", "content": "Chat App Angular" },
+        { "type": "a", "href": "https://github.com/Stefanb0711/chatAppAngular.git"},
+        { "type": "img", "src": "/assets/img/ticTacToeStartbild.png" },
+        { "type": "h2", "content": "Herausforderungen:" },
+        { "type": "p", "content": "- das Spiel in objektorientiert umzuprogrammieren" }
+
+      ]
     }
   ]
 }

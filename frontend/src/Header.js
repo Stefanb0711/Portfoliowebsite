@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {useNavigate, Link} from "react-router-dom";
+import {useNavigate, a} from "react-router-dom";
 
 function Header() {
 
@@ -24,45 +24,45 @@ function Header() {
     return (
         <header id="header" className="header d-flex align-items-center sticky-top text-center">
             <div className="container-fluid container-xl position-relative d-flex align-items-center">
-                <a href="index.html" className="logo d-flex align-items-center me-auto">
+                <a href="/" className="logo d-flex align-items-center me-auto">
                     <h1 className="sitename">Stefans Portfolio</h1>
                 </a>
 
                 <nav id="navmenu" className="navmenu">
                     <ul>
-                        <li><Link to="/">Start</Link></li>
-                        <li><Link to="/über-mich">Über mich</Link></li>
+                        <li><a href="/">Start</a></li>
+                        <li><a href="/über-mich">Über mich</a></li>
 
                         <li className="dropdown">
-                            <Link to="/portfolio"><span>Portfolio</span> <i className="bi bi-chevron-down toggle-dropdown"></i></Link>
+                            <a href="/portfolio"><span>Portfolio</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
                                 <li className="dropdown">
-                                    <a href="#"><span>Python</span> <i
+                                    <a href="/python"><span>Python</span> <i
                                         className="bi bi-chevron-down toggle-dropdown"></i></a>
-                                    <ul>
-                                        <li><a href="#">Webdevelopment</a></li>
-                                        <li><a href="#">GUI-Programming</a></li>
-                                        <li><a href="#">Webscraping</a></li>
-                                        <li><a href="#">Games</a></li>
-                                        <li><a href="#">GUI-Automation</a></li>
-                                    </ul>
+
                                 </li>
 
                                 <li className="dropdown">
-                                    <a href="#"><span>Javascript</span> <i
+                                    <a href="/javascript"><span>Javascript</span> <i
                                         className="bi bi-chevron-down toggle-dropdown"></i></a>
-                                    <ul>
-                                        <li><a href="#">React </a></li>
-                                        <li><a href="#">GUI-Programming</a></li>
-                                        <li><a href="#">Webscraping</a></li>
-                                        <li><a href="#">Games</a></li>
-                                        <li><a href="#">GUI-Automation</a></li>
-                                    </ul>
+                                </li>
+
+                                <li className="dropdown">
+                                    <a href="/frontend-backend"><span>Webentwicklung</span> <i
+                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                </li>
+
+                                <li className="dropdown">
+                                    <a href="/dataanalysis"><span>Datenanalyse</span> <i
+                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                </li>
+
+                                <li className="dropdown">
+                                    <a href="/gui"><span>GUI</span> <i
+                                        className="bi bi-chevron-down toggle-dropdown"></i></a>
                                 </li>
 
 
-                                <li><a href="#">Javascript</a></li>
-                                <li><a href="#">C++</a></li>
                                 <li><a href="#">Ethical Hacking</a></li>
                             </ul>
                         </li>
