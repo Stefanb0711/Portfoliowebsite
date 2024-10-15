@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Richtige Verlinkung zur ProjectExplanation funktioniert">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="ScrollToTop funktioniert halb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Footer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <workItem from="1727454598777" duration="869000" />
       <workItem from="1728418116390" duration="375000" />
       <workItem from="1728583366271" duration="84000" />
-      <workItem from="1728654463327" duration="26643000" />
+      <workItem from="1728654463327" duration="28651000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -296,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728679770365</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="ScrollToTop funktioniert halb">
+      <option name="closed" value="true" />
+      <created>1728951015436</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1728951015436</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +360,8 @@
     <MESSAGE value="Sytles funktionieren wieder in explanation-site" />
     <MESSAGE value="Bei den Portfolioprojektauflistung einen Rand hinzugefügt" />
     <MESSAGE value="Richtige Verlinkung zur ProjectExplanation funktioniert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Richtige Verlinkung zur ProjectExplanation funktioniert" />
+    <MESSAGE value="ScrollToTop funktioniert halb" />
+    <option name="LAST_COMMIT_MESSAGE" value="ScrollToTop funktioniert halb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
