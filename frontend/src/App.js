@@ -9,14 +9,24 @@ import PortfolioSiteTopic from "./components/PortfolioSiteTopic";
 import ExplanationSite from "./components/ExplanationSite";
 import posts from "./blogPosts.json"
 import PortfolioExplanation from "./components/PortfolioExplanation";
+import {useEffect} from "react";
+
+const ScrollToTop = () => {
+  const {pathname} = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+    };
 
 function App() {
 
 
-
   return (
       <Router>
-
+          <ScrollToTop />
         <Header />
 
         <Routes>
