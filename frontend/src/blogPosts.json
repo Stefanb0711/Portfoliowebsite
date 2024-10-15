@@ -401,10 +401,21 @@
       "postContent": [
         { "type": "h1", "content": "Chat App Angular" },
         { "type": "a", "href": "https://github.com/Stefanb0711/chatAppAngular.git"},
-        { "type": "img", "src": "/assets/img/ticTacToeStartbild.png" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/startBildChatApp.png" },
+        { "type": "h2", "content": "Funktionalitäten:" },
+        { "type": "p", "content": "- erstellen eines Kontos\n- verschicken von Nachrichten\n- sein Profil einsehen und bearbeiten" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/loginFunktion.png" },
+        { "type": "p", "content": "- hinzufügen und löschen von Kontakten"},
+        { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/meineKontakte.png" },
+        { "type": "p", "content": "- verschicken von Nachrichten"},
+        { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/chatNachrichten.png" },
+        { "type": "p", "content": "- sein Profil einsehen und bearbeiten"},
+        { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/profilSeite.png" },
         { "type": "h2", "content": "Herausforderungen:" },
-        { "type": "p", "content": "- das Spiel in objektorientiert umzuprogrammieren" }
-
+        { "type":  "p", "content": "- das verwenden von sockets, um eine nahtlose Kommunikation mit dem Chatpartner zu ermöglichen"},
+        { "type":  "p", "content": "- das verwenden von jwt-Token, die lokal im Browser gespeichert werden, damit der Benutzer sich nicht bei jedem Websitebesuch neu einloggen muss"},
+        { "type":  "p", "content": "- das erstellen einer api, die das finden, hinzufügen ,registrieren, filtern, löschen von Benutzern und deren jeweiligen Kontakten reibungslos ermöglicht\n"},
+        { "type":  "p", "content": "- das ausdenken einer logischen Datenbankstruktur, um die Benutzer, als auch ihre Kontake, sowie die Nachrichten mit diesen Kontakten zu speichern."}
       ]
     }
   ]
