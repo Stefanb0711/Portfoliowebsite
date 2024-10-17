@@ -45,7 +45,7 @@ function Portfolio(){
 
         try{
 
-            const response = await axios.post("http://localhost:5000/get-portfolio-projects-sorted-by-properties");
+            const response = await axios.post("https://backend-7k0f.onrender.com/get-portfolio-projects-sorted-by-properties");
 
         if (response.data === []){
             console.log("No Languages found");
