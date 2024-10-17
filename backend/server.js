@@ -9,14 +9,30 @@ config();
 const app = express();
 const port = 5000;
 
+/*
 const db = new pg.Client({
     user : "postgres",
     host : "localhost",
     database : "PortfolioProjects",
-    password: /*process.env.DATABASE_PW*/ /*"bonez187"*/ "stAnWe"
+    password: /*process.env.DATABASE_PW "stAnWe"
 });
 
-db.connect();
+db.connect();*/
+
+
+const db = new pg.Client({
+    connectionString: /*process.env.DATABASE_URL ||*/ 'postgresql://projects_6sy1_user:AlqfJmYpXArq6LBNYzBCERfGvEwxMOcS@dpg-cs87i8u8ii6s73c5f1lg-a.frankfurt-postgres.render.com/projects_6sy1'
+});
+
+
+db.connect(err => {
+    if (err) {
+        console.error('Connection error', err.stack);
+    } else {
+        console.log('Connected to the database');
+    }
+});
+
 
 app.use(bodyParser.json());
 
