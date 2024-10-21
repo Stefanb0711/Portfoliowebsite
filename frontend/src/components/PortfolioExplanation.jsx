@@ -30,7 +30,11 @@ const PortfolioExplanation = ({post}) => {
         marginTop: '60px'
     }
 
-
+    const sideMargins = {
+        marginLeft: '20px',
+        marginRight: '20px',
+        lineHeight: '1.5'
+    }
 
 
   return (
@@ -47,7 +51,7 @@ const PortfolioExplanation = ({post}) => {
                       case 'h2':
                           return <h2 key={blockIndex} className={"spaced"}>{block.content}</h2>;
                       case 'p':
-                          return <p key={blockIndex}>{block.content}</p>;
+                          return <p style={sideMargins} key={blockIndex}>{block.content}</p>;
                       case 'a':
 
                           if (block.isIcon && block.iconType === "pdf"){

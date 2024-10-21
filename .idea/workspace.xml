@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Hinzufügen der Ethical-Hacking-Artikel in blogPosts">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Zwischenstand">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/blogPosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/blogPosts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -389,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729456331579</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Zwischenstand">
+      <option name="closed" value="true" />
+      <created>1729481063079</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1729481063079</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bug gefixt" />
     <MESSAGE value="Programmiersprachesortierung bug gefixt" />
     <MESSAGE value="Thema bug gefixt" />
     <MESSAGE value="Kleinere Fixes und hinzufügen von Projektbildern" />
@@ -449,7 +453,8 @@
     <MESSAGE value="Localhost:5000 in render linl geändert" />
     <MESSAGE value="Package.json geändert" />
     <MESSAGE value="Hinzufügen der Ethical-Hacking-Artikel in blogPosts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hinzufügen der Ethical-Hacking-Artikel in blogPosts" />
+    <MESSAGE value="Zwischenstand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zwischenstand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
