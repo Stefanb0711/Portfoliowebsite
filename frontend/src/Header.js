@@ -59,7 +59,7 @@ function Header() {
                             </li>
 
 
-                            <li><a href="#">Ethical Hacking</a></li>
+                            <li><a href="/ethical-hacking">Ethical Hacking</a></li>
                         </ul>
                     </li>
                 </ul>

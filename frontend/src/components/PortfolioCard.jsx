@@ -9,6 +9,10 @@ function PortfolioCard(props){
 
      //if (location.pathname.includes("portfolio"))
 
+    const topSpace = {
+        marginTop: "7px"
+    };
+
     const description = Array.from(props.description);
 
     const title = String(props.title).toLowerCase();
@@ -19,15 +23,13 @@ function PortfolioCard(props){
         <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
             <img src={props.image} className="img-fluid" alt=""/>
             <div className="portfolio-info">
-                <h4>{props.title}</h4>
+                <h4 style={topSpace}>{props.title}</h4>
                 {description.map((property, index) => (
                     <TopicTag key={index} topic={property} />
                 ))}
                 <a href={props.image} title="App 1" data-gallery="portfolio-gallery-app" className="glightbox preview-link">
-                    <i className="bi bi-zoom-in"></i>
                 </a>
                 <a href="portfolio-details.html" title="More Details" className="details-link">
-                    <i className="bi bi-link-45deg"></i>
                 </a>
             </div>
         </div>

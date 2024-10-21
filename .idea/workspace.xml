@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Zwischenstand">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Seitenmargins für p-Tags hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -394,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729481063079</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Seitenmargins für p-Tags hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1729481636451</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1729481636451</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Programmiersprachesortierung bug gefixt" />
     <MESSAGE value="Thema bug gefixt" />
     <MESSAGE value="Kleinere Fixes und hinzufügen von Projektbildern" />
     <MESSAGE value="Zwischenstand vor dynamische URLS" />
@@ -454,7 +462,8 @@
     <MESSAGE value="Package.json geändert" />
     <MESSAGE value="Hinzufügen der Ethical-Hacking-Artikel in blogPosts" />
     <MESSAGE value="Zwischenstand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zwischenstand" />
+    <MESSAGE value="Seitenmargins für p-Tags hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seitenmargins für p-Tags hinzugefügt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
