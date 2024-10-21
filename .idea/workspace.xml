@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Footer Anpassungen">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Hinzufügen der Ethical-Hacking-Artikel in blogPosts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/blogPosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/blogPosts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -68,8 +71,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Nach-Pause",
-    "last_opened_file_path": "C:/Users/stefa/Documents/Angular/chatAppAngular-master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "ethical-hacking-teil",
+    "last_opened_file_path": "C:/Users/stefa/Dropbox/portfoliowebsite/portfoliowebsite/frontend/src",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,6 +86,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src\assets\css" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src\assets\vendor" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\public\assets\vendor" />
@@ -352,7 +357,39 @@
       <option name="project" value="LOCAL" />
       <updated>1729014782283</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Verbindung mit Datenbank mittels DatenbankUrl">
+      <option name="closed" value="true" />
+      <created>1729170372238</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1729170372238</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Localhost:5000 in render linl geändert">
+      <option name="closed" value="true" />
+      <created>1729175421069</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1729175421069</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Package.json geändert">
+      <option name="closed" value="true" />
+      <created>1729184298952</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1729184298952</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Hinzufügen der Ethical-Hacking-Artikel in blogPosts">
+      <option name="closed" value="true" />
+      <created>1729456331579</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1729456331579</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +411,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Nach-Pause" />
+                        <option value="deployment-version" />
                       </list>
                     </value>
                   </entry>
@@ -387,10 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PortfoliositeTopic funktioniert" />
-    <MESSAGE value="TopicTags funktionieren (wieder)!!" />
-    <MESSAGE value="FUnktioniert größtenteils" />
-    <MESSAGE value="Zwischenstand" />
     <MESSAGE value="Bug gefixt" />
     <MESSAGE value="Programmiersprachesortierung bug gefixt" />
     <MESSAGE value="Thema bug gefixt" />
@@ -412,7 +445,11 @@
     <MESSAGE value="Headers angepasst, dass er sich bei ExplanationSites nicht verschiebt" />
     <MESSAGE value="Kleine Anpassungen" />
     <MESSAGE value="Footer Anpassungen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer Anpassungen" />
+    <MESSAGE value="Verbindung mit Datenbank mittels DatenbankUrl" />
+    <MESSAGE value="Localhost:5000 in render linl geändert" />
+    <MESSAGE value="Package.json geändert" />
+    <MESSAGE value="Hinzufügen der Ethical-Hacking-Artikel in blogPosts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hinzufügen der Ethical-Hacking-Artikel in blogPosts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

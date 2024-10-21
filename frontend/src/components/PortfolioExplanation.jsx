@@ -3,6 +3,8 @@ import '../assets/css/BlogPostPage.css';
 import Header from "../Header"; // Optional für CSS-Styling
 /*import '../assets/css/main.css';*/
 //import postsData from "../blogPosts.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 
 const PortfolioExplanation = ({post}) => {
@@ -19,6 +21,16 @@ const PortfolioExplanation = ({post}) => {
         display: 'flex',
         marginBottom: '20px'
     }
+
+    const centerElementsWithBottomAndTopSpace = {
+        alignText: 'center', // Setze die maximale Breite
+        justifyContent: 'center',
+        display: 'flex',
+        marginBottom: '20px',
+        marginTop: '60px'
+    }
+
+
 
 
   return (
@@ -37,6 +49,14 @@ const PortfolioExplanation = ({post}) => {
                       case 'p':
                           return <p key={blockIndex}>{block.content}</p>;
                       case 'a':
+
+                          if (block.isIcon && block.iconType === "pdf"){
+                              return (
+                                  <a style={centerElementsWithBottomAndTopSpace} key={blockIndex} href={block.href} target={"_blank"} rel={"noopener noreferrer"}>
+                                    <FontAwesomeIcon icon={faFilePdf} size={"3x"} style={{"color": "red" }} />
+                                  </a>
+                              );
+                          }
                           return <a key={blockIndex} href={block.href} className={"spaced"}
                                     style={centerElementsWithBottomSpace}>{block.href}</a>;
                       case 'ul':
@@ -52,7 +72,11 @@ const PortfolioExplanation = ({post}) => {
                                       style={{
                                           maxWidth: block.width ? `${block.width}px` : '100%', // Setze die maximale Breite
                                           height: 'auto', // Behalte das Seitenverhältnis bei
-                                          objectFit: 'cover' // Optional, um sicherzustellen, dass das Bild richtig skaliert
+                                          objectFit: 'cover', // Optional, um sicherzustellen, dass das Bild richtig skaliert,
+                                          justifyContent: 'center',
+                                          display: 'flex',
+                                          margin: 'auto',
+                                          marginBottom: '50px'
                                       }}
                           />;
                       default:

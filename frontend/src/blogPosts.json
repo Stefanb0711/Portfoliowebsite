@@ -420,7 +420,7 @@
     },
 
     {
-      "id": 26,
+      "id": 5,
       "title": "Diese Portfolioseite",
       "author": "Stefan",
       "date": "2023-09-01",
@@ -435,6 +435,56 @@
         { "type": "h2", "content": "Herauforderungen" },
         { "type":  "p", "content":  "- seine eignenen Styles mit den Styles des gedownloadeden Templates zu kombinieren"}
 
+      ]
+    },
+
+    {
+      "id": 26,
+      "title": "Netzwerkhacking",
+      "author": "Stefan",
+      "date": "2023-09-01",
+      "postContent": [
+        { "type": "h1", "content": "Netzwerkhacking" },
+        { "type": "img", "src": "/assets/img/EthicalHacking/network.jpg" },
+        { "type": "p", "content": "\n\nIn diesem Dokument beschreibe ich Schritt für Schritt, wie man beim Netzwerkhacking vorgeht"},
+        { "type":  "p", "content":  "-   Wir versuchen uns in Netzwerke zu hacken mit verschiednen Sicherheitsstandards,"},
+        { "type":  "p", "content":  "-   Außerdem führen wir Man-in-the-Middle-Attacken aus, bei Netzwerken, in dennen wir registriert sind"},
+        { "type":  "p", "content":  "-   Wir schauen uns unterschiedliche Tools für diese Vorhaben an, sowie Tools zum analysieren von Netzwerkverkehr."},
+        { "type":  "p", "content":  "-   Die Best-Practices zum konfigurieren eines Netzwerks werden auch angeschaut"},
+
+        { "type": "a", "href":  "/assets/ethicalHackingFiles/NetzwerkHacken.pdf", "isIcon":  true, "iconType": "pdf", "target":  "_blank"}
+      ]
+    },
+
+    {
+      "id": 27,
+      "title": "Computerhacking",
+      "author": "Stefan",
+      "date": "2023-09-01",
+      "postContent": [
+        { "type": "h1", "content": "Computerhacking" },
+        { "type": "img", "src": "/assets/img/EthicalHacking/computerHacking.jpg" },
+        { "type": "a", "src":  "/assets/ethicalHackingFiles/ComputerHacken.pdf"},
+        { "type": "p", "content": "In diesem Dokument beschreibe ich Schritt für Schritt, wie man Serversideattacken und Clientsideattacken ausführt. Dabei gehe ich auf folgende Punkte ein: " },
+        { "type":  "p", "content":  "   - wie man Backdoors erstellt"},
+        { "type":  "p", "content":  "   - wie man Backdoors harmlos aussehen lässt, damit der Benutzer diese ausführt."},
+        { "type":  "p", "content":  "   - wie man den Browser des Operfs fernsteuert"},
+        { "type":  "p", "content":  "   - wie man fake-Email-Kampagnen startet"},
+        { "type": "a", "href":  "/assets/ethicalHackingFiles/ComputerHacken.pdf", "isIcon":  true, "iconType": "pdf", "target":  "_blank"}
+
+      ]
+    },
+
+    {
+      "id": 28,
+      "title": "Websitehacking",
+      "author": "Stefan",
+      "date": "2023-09-01",
+      "postContent": [
+        { "type": "h1", "content": "Websitehacking" },
+        { "type": "img", "src": "/assets/img/EthicalHacking/websiteHacking.jpg" },
+        { "type": "p", "content": "In diesem Dokument gehen wir Schritt für Schritt die Vorgehensweise durch, wie man eine Website hacken könnte. Außerdem schauen wir uns gängige Fehler und Verletzlichkeiten in Websites an, und wie man sie vermeidet." },
+        { "type": "a", "href":  "/assets/ethicalHackingFiles/WebsiteHacking.pdf", "isIcon":  true, "iconType": "pdf", "target":  "_blank"}
       ]
     }
   ]
