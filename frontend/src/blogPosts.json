@@ -468,7 +468,7 @@
         { "type": "p", "content": "In diesem Dokument beschreibe ich Schritt für Schritt, wie man Serversideattacken und Clientsideattacken ausführt. Dabei gehe ich auf folgende Punkte ein: " },
         { "type":  "p", "content":  "   - wie man Backdoors erstellt"},
         { "type":  "p", "content":  "   - wie man Backdoors harmlos aussehen lässt, damit der Benutzer diese ausführt."},
-        { "type":  "p", "content":  "   - wie man den Browser des Operfs fernsteuert"},
+        { "type":  "p", "content":  "   - wie man den Browser des Opfers fernsteuert"},
         { "type":  "p", "content":  "   - wie man fake-Email-Kampagnen startet"},
         { "type": "a", "href":  "/assets/ethicalHackingFiles/ComputerHacken.pdf", "isIcon":  true, "iconType": "pdf", "target":  "_blank"}
 
