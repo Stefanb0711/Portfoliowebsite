@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="ssl für postgres hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="env-Variablen hinzugefügt für backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/blogPosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/blogPosts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +130,7 @@
       <workItem from="1728418116390" duration="375000" />
       <workItem from="1728583366271" duration="84000" />
       <workItem from="1728654463327" duration="51219000" />
-      <workItem from="1729673484402" duration="9523000" />
+      <workItem from="1729673484402" duration="9944000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -463,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729684531724</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="env-Variablen hinzugefügt für backend">
+      <option name="closed" value="true" />
+      <created>1729693976110</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1729693976110</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +503,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Probleme der Headerleiste gelöst" />
     <MESSAGE value="Searchinputfield ersetzt" />
     <MESSAGE value="Sytles funktionieren wieder in explanation-site" />
     <MESSAGE value="Bei den Portfolioprojektauflistung einen Rand hinzugefügt" />
@@ -523,7 +527,8 @@
     <MESSAGE value="Zugriff auf backend-Url in render.com backend url geändert" />
     <MESSAGE value="Backend testroute hinzugefügt" />
     <MESSAGE value="ssl für postgres hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssl für postgres hinzugefügt" />
+    <MESSAGE value="env-Variablen hinzugefügt für backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="env-Variablen hinzugefügt für backend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

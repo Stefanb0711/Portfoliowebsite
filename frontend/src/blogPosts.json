@@ -433,6 +433,8 @@
         { "type": "img", "src": "/assets/img/portfolioStartseite.png" },
         { "type": "h2", "content": "Funktionalitäten" },
         { "type": "p", "content": "- Filterfunktion für Projekte" },
+        { "type": "p", "content": "- Verwenden von env-Variablen" },
+
         { "type": "p", "content": "- Projekte sind gekennzeichnet durch Tags, die es verwalten" },
 
         { "type": "h2", "content": "Herauforderungen" },
