@@ -11,6 +11,7 @@ config();
 const app = express();
 const port = 5000;
 
+
 const db = new pg.Client({
     connectionString: /*process.env.DATABASE_URL ||*/ 'postgresql://projects_6sy1_user:AlqfJmYpXArq6LBNYzBCERfGvEwxMOcS@dpg-cs87i8u8ii6s73c5f1lg-a.frankfurt-postgres.render.com/projects_6sy1'
 });
@@ -129,6 +130,14 @@ app.post("/get-topic-projects", async (req, res) => {
 app.post("/get-topic-projects-by-language", async (req, res) => {
 
 
+})
+
+
+app.get("/test-ob-backend-funktioniert", async (req, res) => {
+
+    console.log("Backend funktioniert")
+
+    return res.status(200);
 })
 
 
