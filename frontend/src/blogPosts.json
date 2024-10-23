@@ -379,17 +379,18 @@
 
       ]
     },
+
     {
       "id": 22,
       "title": "Morsecode Converter",
       "author": "Stefan",
       "date": "2023-09-01",
       "postContent": [
-        { "type": "h1", "content": "TicTacToe Objektorientiert" },
+        { "type": "h1", "content": "MorsecodeConverter" },
         { "type": "a", "href": "https://github.com/Stefanb0711/MorsecodeConverter.git"},
         { "type": "img", "src": "/assets/img/Sonstiges/MorseCoder/morseCoderStartBild.png" },
-        { "type": "h2", "content": "Was wird analysiert" },
-        { "type": "p", "content": "- was für einen Einfluss die Hautfarbe, Alter, psyche krankheiten auf die Mordrate haben\n- Regionale Unterschiede der Morde in den USA" }
+        { "type": "h2", "content": "Funktionalität: " },
+        { "type": "p", "content": "- ein Konsolenprogrammm, dass eingegebenen Text in einen Morsecode umwandelt" }
       ]
     },
 
@@ -404,9 +405,11 @@
         { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/startBildChatApp.png" },
         { "type": "h2", "content": "Funktionalitäten:" },
         { "type": "p", "content": "- erstellen eines Kontos\n- verschicken von Nachrichten\n- sein Profil einsehen und bearbeiten" },
+        { "type": "p", "content": "- verschicken von Nachrichten" },
+        { "type": "p", "content": "- sein Profil einsehen und bearbeiten" },
         { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/loginFunktion.png" },
         { "type": "p", "content": "- hinzufügen und löschen von Kontakten"},
-        { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/meineKontakte.png" },
+        { "type":  "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/kontaktHinzufuegen.png"},
         { "type": "p", "content": "- verschicken von Nachrichten"},
         { "type": "img", "src": "/assets/img/FrontendBackend/socialNetworkAngular/chatNachrichten.png" },
         { "type": "p", "content": "- sein Profil einsehen und bearbeiten"},
@@ -468,7 +471,7 @@
         { "type": "p", "content": "In diesem Dokument beschreibe ich Schritt für Schritt, wie man Serversideattacken und Clientsideattacken ausführt. Dabei gehe ich auf folgende Punkte ein: " },
         { "type":  "p", "content":  "   - wie man Backdoors erstellt"},
         { "type":  "p", "content":  "   - wie man Backdoors harmlos aussehen lässt, damit der Benutzer diese ausführt."},
-        { "type":  "p", "content":  "   - wie man den Browser des Operfs fernsteuert"},
+        { "type":  "p", "content":  "   - wie man den Browser des Opfers fernsteuert"},
         { "type":  "p", "content":  "   - wie man fake-Email-Kampagnen startet"},
         { "type": "a", "href":  "/assets/ethicalHackingFiles/ComputerHacken.pdf", "isIcon":  true, "iconType": "pdf", "target":  "_blank"}
 
