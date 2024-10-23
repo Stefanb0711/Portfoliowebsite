@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Seitenmargins für p-Tags hinzugefügt">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Übermich seite fertig (vorerst)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/UeberMich.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/UeberMich.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/blogPosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/blogPosts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PortfolioExplanation.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "ethical-hacking-teil",
+    "git-widget-placeholder": "übe-mich",
     "last_opened_file_path": "C:/Users/stefa/Dropbox/portfoliowebsite/portfoliowebsite/frontend/src",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -403,7 +404,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729481636451</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Übermich seite fertig (vorerst)">
+      <option name="closed" value="true" />
+      <created>1729534448543</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1729534448543</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Thema bug gefixt" />
     <MESSAGE value="Kleinere Fixes und hinzufügen von Projektbildern" />
     <MESSAGE value="Zwischenstand vor dynamische URLS" />
     <MESSAGE value="Portfolioprojekte nach Ids auf seiten verteilt, durch dynamische urls" />
@@ -463,7 +471,8 @@
     <MESSAGE value="Hinzufügen der Ethical-Hacking-Artikel in blogPosts" />
     <MESSAGE value="Zwischenstand" />
     <MESSAGE value="Seitenmargins für p-Tags hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seitenmargins für p-Tags hinzugefügt" />
+    <MESSAGE value="Übermich seite fertig (vorerst)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Übermich seite fertig (vorerst)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
