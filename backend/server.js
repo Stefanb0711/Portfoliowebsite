@@ -9,11 +9,11 @@ import {config} from "dotenv";
 config();
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT;
 
 
 const db = new pg.Client({
-    connectionString: /*process.env.DATABASE_URL ||*/ 'postgresql://projects_6sy1_user:AlqfJmYpXArq6LBNYzBCERfGvEwxMOcS@dpg-cs87i8u8ii6s73c5f1lg-a.frankfurt-postgres.render.com/projects_6sy1',
+    connectionString: process.env.DATABASE_URL,
     ssl: {
     rejectUnauthorized: false  // Unsigned Zertifikate akzeptieren, wenn nötig
   }

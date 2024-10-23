@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Backend testroute hinzugefügt">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="ssl für postgres hinzugefügt">
+      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +92,7 @@
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\public\assets\vendor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\backend" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src\assets\css" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\public\assets\img" />
@@ -128,7 +133,7 @@
       <workItem from="1728418116390" duration="375000" />
       <workItem from="1728583366271" duration="84000" />
       <workItem from="1728654463327" duration="51219000" />
-      <workItem from="1729673484402" duration="7678000" />
+      <workItem from="1729673484402" duration="9523000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -450,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729683718751</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="ssl für postgres hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1729684531724</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1729684531724</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="db hinzugefügt" />
     <MESSAGE value="Probleme der Headerleiste gelöst" />
     <MESSAGE value="Searchinputfield ersetzt" />
     <MESSAGE value="Sytles funktionieren wieder in explanation-site" />
@@ -510,7 +522,8 @@
     <MESSAGE value="Backendänderungen" />
     <MESSAGE value="Zugriff auf backend-Url in render.com backend url geändert" />
     <MESSAGE value="Backend testroute hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend testroute hinzugefügt" />
+    <MESSAGE value="ssl für postgres hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssl für postgres hinzugefügt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
