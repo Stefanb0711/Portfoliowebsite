@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Zugriff auf backend-Url in render.com backend url geändert">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Backend testroute hinzugefügt">
       <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +128,7 @@
       <workItem from="1728418116390" duration="375000" />
       <workItem from="1728583366271" duration="84000" />
       <workItem from="1728654463327" duration="51219000" />
-      <workItem from="1729673484402" duration="6907000" />
+      <workItem from="1729673484402" duration="7678000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -443,7 +442,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729678971991</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Backend testroute hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1729683718751</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1729683718751</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Zwischenstand Blogposts post 9" />
     <MESSAGE value="db hinzugefügt" />
     <MESSAGE value="Probleme der Headerleiste gelöst" />
     <MESSAGE value="Searchinputfield ersetzt" />
@@ -503,7 +509,8 @@
     <MESSAGE value="InvalidHost Problem Ansatz2" />
     <MESSAGE value="Backendänderungen" />
     <MESSAGE value="Zugriff auf backend-Url in render.com backend url geändert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zugriff auf backend-Url in render.com backend url geändert" />
+    <MESSAGE value="Backend testroute hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend testroute hinzugefügt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
