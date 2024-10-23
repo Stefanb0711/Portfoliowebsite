@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Kleinigkeiten">
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="InvalidHost Problem Ansatz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +129,7 @@
       <workItem from="1728418116390" duration="375000" />
       <workItem from="1728583366271" duration="84000" />
       <workItem from="1728654463327" duration="51219000" />
-      <workItem from="1729673484402" duration="738000" />
+      <workItem from="1729673484402" duration="2137000" />
     </task>
     <task id="LOCAL-00001" summary="Es klappt die Daten der Sprachen aus dem Backend zu scrappen">
       <option name="closed" value="true" />
@@ -413,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729653024202</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="InvalidHost Problem Ansatz">
+      <option name="closed" value="true" />
+      <created>1729674280423</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1729674280423</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +454,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Kleinere Fixes und hinzufügen von Projektbildern" />
     <MESSAGE value="Zwischenstand vor dynamische URLS" />
     <MESSAGE value="Portfolioprojekte nach Ids auf seiten verteilt, durch dynamische urls" />
     <MESSAGE value="Bilder grob in Portfolioprojektposts platziert" />
@@ -473,7 +478,8 @@
     <MESSAGE value="Zwischenstand" />
     <MESSAGE value="Seitenmargins für p-Tags hinzugefügt" />
     <MESSAGE value="Kleinigkeiten" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kleinigkeiten" />
+    <MESSAGE value="InvalidHost Problem Ansatz" />
+    <option name="LAST_COMMIT_MESSAGE" value="InvalidHost Problem Ansatz" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
