@@ -3,7 +3,7 @@ import pg from "pg";
 import bodyParser from "body-parser";
 import cors from "cors";
 import {config} from "dotenv";
-import { Client } from "pg";
+//import { Client } from "pg";
 
 
 config();
@@ -11,8 +11,8 @@ config();
 const app = express();
 const port = 5000;
 
-const db = new Client({
-    connectionString: /*process.env.DATABASE_URL ||*/ 'postgresql://projects_t127_user:7H7HaXr6HoPOuazjQqCPUkZJZoOgigt4@dpg-cs7iu73v2p9s73f38e6g-a/projects_t127'
+const db = new pg.Client({
+    connectionString: /*process.env.DATABASE_URL ||*/ 'postgresql://projects_6sy1_user:AlqfJmYpXArq6LBNYzBCERfGvEwxMOcS@dpg-cs87i8u8ii6s73c5f1lg-a.frankfurt-postgres.render.com/projects_6sy1'
 });
 
 // Mit der Datenbank verbinden
