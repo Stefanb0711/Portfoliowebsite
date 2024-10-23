@@ -19,7 +19,8 @@ const PortfolioExplanation = ({post}) => {
         alignText: 'center', // Setze die maximale Breite
         justifyContent: 'center',
         display: 'flex',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        textAlign: 'center'
     }
 
     const centerElementsWithBottomAndTopSpace = {
@@ -49,7 +50,7 @@ const PortfolioExplanation = ({post}) => {
                                      className={"spaced"}
                           >{block.content}</h1>;
                       case 'h2':
-                          return <h2 key={blockIndex} className={"spaced"}>{block.content}</h2>;
+                          return <h2 style={sideMargins} key={blockIndex} className={"spaced"}>{block.content}</h2>;
                       case 'p':
                           return <p style={sideMargins} key={blockIndex}>{block.content}</p>;
                       case 'a':

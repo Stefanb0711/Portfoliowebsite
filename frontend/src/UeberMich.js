@@ -54,7 +54,7 @@ function UeberMich() {
         { "type": "strong", "content": "-    APIs & Backend-Integration: " },
         {"type": "p", "content": "Eigene Backend-APIs, Socket-Kommunikation, Authentifizierungstokens für Sicherheit und Nutzerfreundlichkeit"},
 
-        { "type": "p", "content": "-   Mit 20 Python-Projekten und 5 Fullstack-Webprojekten in JavaScript habe ich bereits umfassende Erfahrungen gesammelt. Ich beherrsche den Einsatz von Templates sowie das Erstellen eigener Komponenten mit Frameworks wie Angular und React. Zudem bin ich versiert im Einsatz von Sockets zur Echtzeit-Kommunikation zwischen Frontend und Backend, wie etwa in meiner Angular ChatApp.  Gängige Sicherheitsfeaturens wie das verwenden von Authentifizierungstokens, Password-Hashing, sowie das verwenden von env-Variablen können sie bei mir voraussetzen. "},
+        { "type": "p", "content": "-   Mit 20 Python-Projekten und 5 Fullstack-Webprojekten in JavaScript habe ich bereits umfassende Erfahrungen gesammelt. Ich beherrsche den Einsatz von Templates sowie das Erstellen eigener Komponenten mit Frameworks wie Angular und React. Zudem bin ich versiert im Einsatz von Sockets zur Echtzeit-Kommunikation zwischen Frontend und Backend, wie etwa in meiner Angular ChatApp.  Gängige Sicherheitsmaßnahmen wie das verwenden von Authentifizierungstokens, Password-Hashing, sowie das verwenden von env-Variablen können sie bei mir voraussetzen. "},
         { "type": "p", "content": "-    Zusätzlich habe ich Erfahrungen in C++ gesammelt, welche mein Verständnis für objektorientierte Programmierung, und vielen Javascriptkonzepten vertieft haben."},
         { "type": "h3", "content": "Mein Weg in Ethical Hacking"},
         {"type": "p", "content": "Neben der Webentwicklung habe ich ein wachsendes Interesse am Ethical Hacking entwickelt. Die Auseinandersetzung mit Themen wie  Backdoors, SQL-Injections, MITM-Attacken, Netzwerkcracking,…  hat mein Verständnis der IT-Sicherheit verbessert und mir wertvolle Einblicke in potenzielle Schwachstellen gegeben. Auch wenn ich in diesem Bereich noch weiter lernen möchte, hilft mir dieses Wissen, sicherere Webanwendungen zu entwickeln."},
@@ -68,7 +68,7 @@ function UeberMich() {
             {postAboutMe.postContent.map((block, blockIndex) => {
                 switch (block.type) {
                     case 'h1':
-                        return <h1 style={centerElementsWithBottomSpace} key={blockIndex}>{block.content}</h1>
+                        return <h1 style={centerElementsWithBottomAndTopSpace} key={blockIndex}>{block.content}</h1>
                     case 'h2':
                         return <h2 style={centerElementsWithBottomAndTopSpace} key={blockIndex}>{block.content}</h2>
                     case 'h3':
