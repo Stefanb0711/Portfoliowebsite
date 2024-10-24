@@ -24,6 +24,14 @@ function UeberMich() {
         marginTop: '60px'
     }
 
+    const settingsHeader = {
+        alignText: 'center', // Setze die maximale Breite
+        justifyContent: 'center',
+        display: 'flex',
+        marginBottom: '50px',
+        marginTop: '60px'
+    }
+
     const sideMargins = {
         marginLeft: '20px',
         marginRight: '20px',
@@ -38,7 +46,6 @@ function UeberMich() {
       "date": "2023-09-01",
       "postContent": [
         { "type": "h1", "content": "Über mich" },
-        { "type": "img", "src": "" },
         { "type": "p", "content": "Hallo, mein Name ist Stefan, und ich bin ein ausgebildeter Mediengestalter, der seine Leidenschaft in der Welt der Webentwicklung und Programmierung entdeckt hat. Während meiner Ausbildung habe ich bemerkt, wie viel Freude mir das Programmieren bereitet. So begann ich, mir Python selbstständig durch Onlinekurse beizubringen und tauchte in verschiedene Bereiche wie Webentwicklung, Datenanalyse und Spielentwicklung ein. Besonders die Webentwicklung hat mein Interesse geweckt und mich dazu motiviert, auch JavaScript und dessen Ökosysteme zu erlernen.\n" },
         { "type": "h3", "content": "Meine Fähigkeiten"},
 
@@ -68,7 +75,7 @@ function UeberMich() {
             {postAboutMe.postContent.map((block, blockIndex) => {
                 switch (block.type) {
                     case 'h1':
-                        return <h1 style={centerElementsWithBottomAndTopSpace} key={blockIndex}>{block.content}</h1>
+                        return <h1 style={settingsHeader} key={blockIndex}>{block.content}</h1>
                     case 'h2':
                         return <h2 style={centerElementsWithBottomAndTopSpace} key={blockIndex}>{block.content}</h2>
                     case 'h3':

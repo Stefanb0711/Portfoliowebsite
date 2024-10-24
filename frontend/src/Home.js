@@ -18,7 +18,7 @@ function Home() {
                             </div>
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2 hero-img" >
-                            <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""/>
+                            <img src="assets/img/profilbildVonMirAusgeschnittenRund.png" class="img-fluid animated" alt=""/>
                         </div>
                     </div>
                 </div>
