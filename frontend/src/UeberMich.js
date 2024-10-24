@@ -30,6 +30,10 @@ function UeberMich() {
         lineHeight: '1.5'
     }
 
+    const imageSizing = {
+        width: '50%'
+    }
+
 
     const postAboutMe = {
       "id": 1,
@@ -38,7 +42,8 @@ function UeberMich() {
       "date": "2023-09-01",
       "postContent": [
         { "type": "h1", "content": "Über mich" },
-        { "type": "img", "src": "" },
+        { "type": "img", "src": "assets/img/profilbildVonMir.png" },
+
         { "type": "p", "content": "Hallo, mein Name ist Stefan, und ich bin ein ausgebildeter Mediengestalter, der seine Leidenschaft in der Welt der Webentwicklung und Programmierung entdeckt hat. Während meiner Ausbildung habe ich bemerkt, wie viel Freude mir das Programmieren bereitet. So begann ich, mir Python selbstständig durch Onlinekurse beizubringen und tauchte in verschiedene Bereiche wie Webentwicklung, Datenanalyse und Spielentwicklung ein. Besonders die Webentwicklung hat mein Interesse geweckt und mich dazu motiviert, auch JavaScript und dessen Ökosysteme zu erlernen.\n" },
         { "type": "h3", "content": "Meine Fähigkeiten"},
 
@@ -82,7 +87,7 @@ function UeberMich() {
                           return <img key={blockIndex} src={block.src} className={"spaced"} alt={block.alt}
                                       style={{
                                           maxWidth: block.width ? `${block.width}px` : '100%', // Setze die maximale Breite
-                                          height: 'auto', // Behalte das Seitenverhältnis bei
+                                          height: '50vh', // Behalte das Seitenverhältnis bei
                                           objectFit: 'cover', // Optional, um sicherzustellen, dass das Bild richtig skaliert,
                                           justifyContent: 'center',
                                           display: 'flex',
