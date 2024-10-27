@@ -70,9 +70,29 @@ function UeberMich() {
       ]
     };
 
+
+
+
     return (
         <div className={"blog-post-page"}>
             {postAboutMe.postContent.map((block, blockIndex) => {
+                if(block.type === 'p' && Array.isArray(block.content)){
+                    return (
+                        <p key={blockIndex} style={sideMargins}>
+                            {block.content.map((subItem, subIndex) => {
+                                if (typeof subItem === "string") {
+                                    return <span /*style={sideMargins}*/ key={subIndex}>{subItem}</span>;
+                                } else if (subItem.type === 'a') {
+                                    return (
+                                        <a key={subIndex} href={subItem.href} target={"_blank"} rel={"noopener noreferrer"} > {subItem.content}</a>
+                                    )
+                                }
+                            })}
+                        </p>
+                    )
+                }
+
+
                 switch (block.type) {
                     case 'h1':
                         return <h1 style={settingsHeader} key={blockIndex}>{block.content}</h1>
