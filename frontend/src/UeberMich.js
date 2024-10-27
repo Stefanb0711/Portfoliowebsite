@@ -67,8 +67,12 @@ function UeberMich() {
         { "type": "strong", "content": "-    APIs & Backend-Integration: " },
         {"type": "p", "content": "Eigene Backend-APIs, Socket-Kommunikation, Authentifizierungstokens für Sicherheit und Nutzerfreundlichkeit"},
 
-        { "type": "p", "content": "-   Mit 20 Python-Projekten und 5 Fullstack-Webprojekten in JavaScript habe ich bereits umfassende Erfahrungen gesammelt. Ich beherrsche den Einsatz von Templates sowie das Erstellen eigener Komponenten mit Frameworks wie Angular und React. Zudem bin ich versiert im Einsatz von Sockets zur Echtzeit-Kommunikation zwischen Frontend und Backend, wie etwa in meiner Angular ChatApp.  Gängige Sicherheitsmaßnahmen wie das verwenden von Authentifizierungstokens, Password-Hashing, sowie das verwenden von env-Variablen können sie bei mir voraussetzen. "},
-        { "type": "p", "content": "-    Zusätzlich habe ich Erfahrungen in C++ gesammelt, welche mein Verständnis für objektorientierte Programmierung, und vielen Javascriptkonzepten vertieft haben."},
+          { "type": "p", "content": [
+                  "Hier ist ein Text mit einem ",
+                  { "type": "a", "href": "https://www.awb-it.de", "content": "Link zu meiner Seite" },
+                  " und danach geht der Text weiter."
+          ]},
+        { "type": "p", "content": "- Zusätzlich habe ich Erfahrungen in C++ gesammelt, welche mein Verständnis für objektorientierte Programmierung, und vielen Javascriptkonzepten vertieft haben."},
         { "type": "h3", "content": "Mein Weg in Ethical Hacking"},
         {"type": "p", "content": "Neben der Webentwicklung habe ich ein wachsendes Interesse am Ethical Hacking entwickelt. Die Auseinandersetzung mit Themen wie  Backdoors, SQL-Injections, MITM-Attacken, Netzwerkcracking,…  hat mein Verständnis der IT-Sicherheit verbessert und mir wertvolle Einblicke in potenzielle Schwachstellen gegeben. Auch wenn ich in diesem Bereich noch weiter lernen möchte, hilft mir dieses Wissen, sicherere Webanwendungen zu entwickeln."},
         {"type": "h3", "content": "Was mich antreibt"},
@@ -79,6 +83,26 @@ function UeberMich() {
     return (
         <div className={"blog-post-page"}>
             {postAboutMe.postContent.map((block, blockIndex) => {
+
+                if(block.type === 'p' && Array.isArray(block.content)){
+                    return (
+                        <p key={blockIndex}>
+                            {block.content.map((subItem, subIndex) => {
+                            if (typeof subItem === "string") {
+                                return <p style={sideMargins} key={blockIndex}>{subItem.content}</p>
+
+                            } else if (subItem.type === 'a') {
+                                return (
+                                    <a key={subIndex} href={subItem.href} target={"_blank"} rel={"noopener noreferrer"} > {subItem.content}</a>
+                                )
+                            }
+                        })}
+                        </p>
+                    )
+                }
+
+
+
                 switch (block.type) {
                     case 'h1':
                         return <h1 style={settingsHeader} key={blockIndex}>{block.content}</h1>
@@ -87,7 +111,6 @@ function UeberMich() {
                     case 'h3':
                         return <h3 style={centerElementsWithBottomAndTopSpace} key={blockIndex}>{block.content}</h3>
                     case 'p':
-
                         return <p style={sideMargins} key={blockIndex}>{block.content}</p>
                     case 'strong':
                         return <strong key={blockIndex} style={sideMargins}>{block.content}</strong>
