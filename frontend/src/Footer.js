@@ -41,7 +41,7 @@ function Footer() {
                     <div className="col-lg-3 col-md-6 footer-links">
                         <h4>Über mich</h4>
                         <ul>
-                            <li><i className="bi bi-chevron-right"></i> <a href="#">Lebenslauf</a></li>
+                            <li><i className="bi bi-chevron-right"></i> <a href="/über-mich">Über mich</a></li>
                         </ul>
                     </div>
                 </div>
