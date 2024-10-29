@@ -55,8 +55,8 @@ function UeberMich() {
         { "type": "strong", "content": "-    JavaScript Fullstack: " },
         { "type": "p", "content": "Node.js, Express, Angular, React" },
 
-        { "type": "strong", "content": "- Datenbanken: " },
-        { "type": "p", "content": "PostgreSQL, SQLAlchemy" },
+        { "type": "strong", "content": "- Datenbankmanagmentsysteme: " },
+        { "type": "p", "content": "PostgreSQL, SQLite" },
 
         { "type": "strong", "content": "-    APIs & Backend-Integration: " },
         {"type": "p", "content": "Eigene Backend-APIs, Socket-Kommunikation, Authentifizierungstokens für Sicherheit und Nutzerfreundlichkeit"},
