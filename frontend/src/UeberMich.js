@@ -38,6 +38,10 @@ function UeberMich() {
         lineHeight: '1.5'
     }
 
+    const imageSizing = {
+        width: '50%'
+    }
+
 
     const postAboutMe = {
       "id": 1,
@@ -46,6 +50,8 @@ function UeberMich() {
       "date": "2023-09-01",
       "postContent": [
         { "type": "h1", "content": "Über mich" },
+        /*{ "type": "img", "src": "assets/img/profilbildVonMir.png" },*/
+
         { "type": "p", "content": "Hallo, mein Name ist Stefan, und ich bin ein ausgebildeter Mediengestalter, der seine Leidenschaft in der Welt der Webentwicklung und Programmierung entdeckt hat. Während meiner Ausbildung habe ich bemerkt, wie viel Freude mir das Programmieren bereitet. So begann ich, mir Python selbstständig durch Onlinekurse beizubringen und tauchte in verschiedene Bereiche wie Webentwicklung, Datenanalyse und Spielentwicklung ein. Besonders die Webentwicklung hat mein Interesse geweckt und mich dazu motiviert, auch JavaScript und dessen Ökosysteme zu erlernen.\n" },
         { "type": "h3", "content": "Meine Fähigkeiten"},
 
@@ -53,16 +59,18 @@ function UeberMich() {
         { "type": "p", "content": "Flask, GUI-Entwicklung mit Tkinter, Web Scraping, Datenanalyse mit Pandas, Spieleentwicklung mit Pygame"},
 
         { "type": "strong", "content": "-    JavaScript Fullstack: " },
-        { "type": "p", "content": "Node.js, TypeScript, Express, Angular, React" },
+        { "type": "p", "content": "Node.js, Express, Angular, React" },
 
-        { "type": "strong", "content": "- Datenbankmanagmentsysteme: " },
-        { "type": "p", "content": "PostgreSQL, SQLite" },
+        { "type": "strong", "content": "- Datenbanken: " },
+        { "type": "p", "content": "PostgreSQL, SQLAlchemy" },
 
-        /*{ "type": "strong", "content": "-    APIs & Backend-Integration: " },
-        {"type": "p", "content": "Eigene Backend-APIs, Socket-Kommunikation, Authentifizierungstokens für Sicherheit und Nutzerfreundlichkeit"},*/
+        { "type": "strong", "content": "-    APIs & Backend-Integration: " },
+        {"type": "p", "content": "Eigene Backend-APIs, Socket-Kommunikation, Authentifizierungstokens für Sicherheit und Nutzerfreundlichkeit"},
 
-        { "type": "p", "content": ["Mit 20 Python-Projekten und 5 Fullstack-Webprojekten in JavaScript habe ich bereits umfassende Erfahrungen gesammelt. Ich beherrsche den Einsatz von Templates (",{"type": "a", "href": "https://awb-itwebsite.onrender.com", "content": "siehe hier" }, ") sowie das Erstellen eigener Komponenten mit Frameworks wie Angular und React (",{"type": "a", "href": "https://github.com/Stefanb0711/chatAppAngular", "content": "Angular Chatapp" },{"type": "a", "href": "https://github.com/Stefanb0711/TodoListReactExpress", "content": "Todoliste React/Express" }, "). Zudem bin ich versiert im Einsatz von Sockets zur Echtzeit-Kommunikation zwischen Frontend und Backend, wie etwa in meiner Angular ChatApp.  Gängige Sicherheitsmaßnahmen wie das verwenden von Authentifizierungstokens, Password-Hashing, sowie das verwenden von env-Variablen können sie bei mir voraussetzen."]},
-        { "type": "p", "content": "Zusätzlich habe ich Erfahrungen in C++ gesammelt, welche mein Verständnis für objektorientierte Programmierung, und vielen Javascriptkonzepten vertieft haben."},
+        { "type": "p", "content": ["Mit 20 Python-Projekten und 5 Fullstack-Webprojekten in JavaScript habe ich bereits umfassende Erfahrungen gesammelt. Ich beherrsche den Einsatz von Templates sowie das Erstellen eigener Komponenten mit Frameworks wie Angular und React (", { "type": "a", "href": "https://www.awb-it.de", "content": "siehe hier" }, "). Zudem bin ich versiert im Einsatz von Sockets zur Echtzeit-Kommunikation zwischen Frontend und Backend, wie etwa in meiner Angular ChatApp.  Gängige Sicherheitsmaßnahmen wie das verwenden von Authentifizierungstokens, Password-Hashing, sowie das verwenden von env-Variablen können sie bei mir voraussetzen."]},
+
+
+        { "type": "p", "content": "- Zusätzlich habe ich Erfahrungen in C++ gesammelt, welche mein Verständnis für objektorientierte Programmierung, und vielen Javascriptkonzepten vertieft haben."},
         { "type": "h3", "content": "Mein Weg in Ethical Hacking"},
         {"type": "p", "content": "Neben der Webentwicklung habe ich ein wachsendes Interesse am Ethical Hacking entwickelt. Die Auseinandersetzung mit Themen wie  Backdoors, SQL-Injections, MITM-Attacken, Netzwerkcracking,…  hat mein Verständnis der IT-Sicherheit verbessert und mir wertvolle Einblicke in potenzielle Schwachstellen gegeben. Auch wenn ich in diesem Bereich noch weiter lernen möchte, hilft mir dieses Wissen, sicherere Webanwendungen zu entwickeln."},
         {"type": "h3", "content": "Was mich antreibt"},
@@ -70,38 +78,36 @@ function UeberMich() {
       ]
     };
 
-
-
-
     return (
         <div className={"blog-post-page"}>
             {postAboutMe.postContent.map((block, blockIndex) => {
+
                 if(block.type === 'p' && Array.isArray(block.content)){
                     return (
                         <p key={blockIndex} style={sideMargins}>
                             {block.content.map((subItem, subIndex) => {
-                                if (typeof subItem === "string") {
-                                    return <span /*style={sideMargins}*/ key={subIndex}>{subItem}</span>;
-                                } else if (subItem.type === 'a') {
-                                    return (
-                                        <a key={subIndex} href={subItem.href} target={"_blank"} rel={"noopener noreferrer"} > {subItem.content}</a>
-                                    )
-                                }
-                            })}
+                            if (typeof subItem === "string") {
+                                return <span /*style={sideMargins}*/ key={subIndex}>{subItem}</span>;
+                            } else if (subItem.type === 'a') {
+                                return (
+                                    <a key={subIndex} href={subItem.href} target={"_blank"} rel={"noopener noreferrer"} > {subItem.content}</a>
+                                )
+                            }
+                        })}
                         </p>
                     )
                 }
+
 
 
                 switch (block.type) {
                     case 'h1':
                         return <h1 style={settingsHeader} key={blockIndex}>{block.content}</h1>
                     case 'h2':
-                        return <h2 style={centerElementsWithBottomAndTopSpace} key={blockIndex}>{block.content}</h2>
+                        return <h2 style={centerElementsWithBottomSpace} key={blockIndex}>{block.content}</h2>
                     case 'h3':
                         return <h3 style={centerElementsWithBottomAndTopSpace} key={blockIndex}>{block.content}</h3>
                     case 'p':
-
                         return <p style={sideMargins} key={blockIndex}>{block.content}</p>
                     case 'strong':
                         return <strong key={blockIndex} style={sideMargins}>{block.content}</strong>
@@ -109,7 +115,7 @@ function UeberMich() {
                           return <img key={blockIndex} src={block.src} className={"spaced"} alt={block.alt}
                                       style={{
                                           maxWidth: block.width ? `${block.width}px` : '100%', // Setze die maximale Breite
-                                          height: 'auto', // Behalte das Seitenverhältnis bei
+                                          height: '30vh', // Behalte das Seitenverhältnis bei
                                           objectFit: 'cover', // Optional, um sicherzustellen, dass das Bild richtig skaliert,
                                           justifyContent: 'center',
                                           display: 'flex',

@@ -14,7 +14,7 @@ function Portfolio(){
 
     async function getLanguages(){
 
-      const response = await axios.post("https://backend-7k0f.onrender.com/get-portfolio-projects-sorted-by-language");
+      const response = await axios.post("http://localhost:5000/get-portfolio-projects-sorted-by-language");
 
       setProjectGroups(response.data["languages"]);
         
@@ -46,7 +46,7 @@ function Portfolio(){
 
         try{
 
-            const response = await axios.post("https://backend-7k0f.onrender.com/get-portfolio-projects-sorted-by-properties");
+            const response = await axios.post("http://localhost:5000/get-portfolio-projects-sorted-by-properties");
 
         if (response.data === []){
             console.log("No Languages found");
@@ -81,34 +81,20 @@ function Portfolio(){
 
             {filterStatus === "properties" && (
                 <div>
-                    {projectGroups.length === 0 ? (
-                        <p>Lädt.Es kann bis zu einer halben Minute dauern...</p>
-                    ) : (
-                        projectGroups.map((projectGroup) => (
-                            <PortfolioCard
-                                key={projectGroup["id"]}
-                                title={projectGroup["main_topic"]}
-                                description=""
-                                image={projectGroup["property_image"]}
-                            />
-                        ))
-                    )}
+                    {projectGroups.map((projectGroup) => {
+                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["main_topic"]} description=""
+                                               image={projectGroup["property_image"]}/>)
+                    })}
                 </div>
             )}
 
 
             {filterStatus === "languages" && (
                 <div>
-                    {projectGroups.length === 0 ? (
-                        <p>Lädt.Es kann bis zu einer halben Minute dauern...</p>
-                    ) : (
-                         projectGroups.map((projectGroup) => {
-                        return (
-                            <PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
-                                           image={projectGroup["language_image"]}/>)
-                    })
-                    )}
-
+                    {projectGroups.map((projectGroup) => {
+                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
+                                               image={projectGroup["language_image"]} />)
+                    })}
                 </div>
             )}
 

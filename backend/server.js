@@ -3,30 +3,21 @@ import pg from "pg";
 import bodyParser from "body-parser";
 import cors from "cors";
 import {config} from "dotenv";
-//import { Client } from "pg";
-
 
 config();
 
 const app = express();
-const port = process.env.PORT;
-
+const port = 5000;
 
 const db = new pg.Client({
-    connectionString: process.env.DATABASE_URL,
-    ssl: {
-    rejectUnauthorized: false  // Unsigned Zertifikate akzeptieren, wenn nötig
-  }
+    user : "postgres",
+    host : "localhost",
+    database : "PortfolioProjects",
+    password: /*process.env.DATABASE_PW*/ /*"bonez187"*/ "stAnWe"
 });
 
-// Mit der Datenbank verbinden
-db.connect(err => {
-    if (err) {
-        console.error('Connection error', err.stack);
-    } else {
-        console.log('Connected to the database');
-    }
-});
+db.connect();
+
 app.use(bodyParser.json());
 
 
@@ -133,14 +124,6 @@ app.post("/get-topic-projects", async (req, res) => {
 app.post("/get-topic-projects-by-language", async (req, res) => {
 
 
-})
-
-
-app.get("/test-ob-backend-funktioniert", async (req, res) => {
-
-    console.log("Backend funktioniert")
-
-    return res.status(200);
 })
 
 
