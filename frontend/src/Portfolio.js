@@ -81,20 +81,34 @@ function Portfolio(){
 
             {filterStatus === "properties" && (
                 <div>
-                    {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["main_topic"]} description=""
-                                               image={projectGroup["property_image"]}/>)
-                    })}
+                    {projectGroups.length === 0 ? (
+                        <p>Lädt.Es kann bis zu einer halben Minute dauern...</p>
+                    ) : (
+                        projectGroups.map((projectGroup) => (
+                            <PortfolioCard
+                                key={projectGroup["id"]}
+                                title={projectGroup["main_topic"]}
+                                description=""
+                                image={projectGroup["property_image"]}
+                            />
+                        ))
+                    )}
                 </div>
             )}
 
 
             {filterStatus === "languages" && (
                 <div>
-                    {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
-                                               image={projectGroup["language_image"]} />)
-                    })}
+                    {projectGroups.length === 0 ? (
+                        <p>Lädt.Es kann bis zu einer halben Minute dauern...</p>
+                    ) : (
+                         projectGroups.map((projectGroup) => {
+                        return (
+                            <PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
+                                           image={projectGroup["language_image"]}/>)
+                    })
+                    )}
+
                 </div>
             )}
 
