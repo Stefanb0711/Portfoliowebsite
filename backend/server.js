@@ -3,6 +3,9 @@ import pg from "pg";
 import bodyParser from "body-parser";
 import cors from "cors";
 import {config} from "dotenv";
+import cron from "node-cron";
+
+
 
 config();
 
@@ -28,6 +31,20 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
+
+async function keepDatabaseAwake() {
+  try {
+    const result = await db.query('SELECT 1');
+    console.log("Database keep-alive check:", result.rows);
+  } catch (error) {
+    console.error("Error keeping database awake:", error);
+  }
+}
+
+cron.schedule('*/14 * * * *', () => {
+  console.log("Running database keep-alive check");
+  keepDatabaseAwake();
+});
 
 
 app.post("/get-all-portfolio-projects", async (req, res) => {
