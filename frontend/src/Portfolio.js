@@ -76,35 +76,46 @@ function Portfolio(){
 
       <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+              {filterStatus === "properties" && (
+                  <div>
+                      {projectGroups.length === 0 ? (
+                          <p>Loading...</p>
+                      ) : (
+                          projectGroups.map((projectGroup) => (
+                              <PortfolioCard
+                                  key={projectGroup["id"]}
+                                  title={projectGroup["main_topic"]}
+                                  description=""
+                                  image={projectGroup["property_image"]}
+                              />
+                          ))
+                      )}
+                  </div>
+              )}
 
 
-            {filterStatus === "properties" && (
-                <div>
-                    {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["main_topic"]} description=""
-                                               image={projectGroup["property_image"]}/>)
-                    })}
-                </div>
-            )}
+              {filterStatus === "languages" && (
+                  <div>
+                      {projectGroups.length === 0 ? (
+                          <p>Loading...</p>
+                      ) : (
+                          projectGroups.map((projectGroup) => (
+                              <PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
+                                             image={projectGroup["language_image"]}/>
+                          ))
+                      )}
+                  </div>
+              )}
 
 
-            {filterStatus === "languages" && (
-                <div>
-                    {projectGroups.map((projectGroup) => {
-                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
-                                               image={projectGroup["language_image"]} />)
-                    })}
-                </div>
-            )}
-
-
-        </div>
+          </div>
 
       </div>
 
-    </section>
-        
+        </section>
+
     );
 }
 
