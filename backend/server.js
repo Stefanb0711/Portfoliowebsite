@@ -13,13 +13,20 @@ const app = express();
 const port = 5000;
 
 const db = new pg.Client({
-    user : "postgres",
-    host : "localhost",
-    database : "PortfolioProjects",
-    password: /*process.env.DATABASE_PW*/ /*"bonez187"*/ "stAnWe"
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+    rejectUnauthorized: false  // Unsigned Zertifikate akzeptieren, wenn nötig
+  }
 });
 
-db.connect();
+// Mit der Datenbank verbinden
+db.connect(err => {
+    if (err) {
+        console.error('Connection error', err.stack);
+    } else {
+        console.log('Connected to the database');
+    }
+});
 
 app.use(bodyParser.json());
 
