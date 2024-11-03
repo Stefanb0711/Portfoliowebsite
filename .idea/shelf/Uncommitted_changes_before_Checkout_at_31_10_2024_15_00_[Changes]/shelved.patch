@@ -1,3 +1,81 @@
+Index: frontend/src/Portfolio.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React, {useState, useEffect} from \"react\";\r\nimport SortByInput from \"./components/sortByInput\";\r\nimport PortfolioCard from \"./components/PortfolioCard\";\r\nimport axios from \"axios\";\r\nimport \"./assets/css/myStyles.css\";\r\n\r\n\r\nfunction Portfolio(){\r\n\r\n    const [filterStatus, setFilterStatus] = useState(\"inactive\");\r\n\r\n    const [projectGroups, setProjectGroups] = useState([]);\r\n\r\n\r\n    async function getLanguages(){\r\n\r\n      const response = await axios.post(\"http://localhost:5000/get-portfolio-projects-sorted-by-language\");\r\n\r\n      setProjectGroups(response.data[\"languages\"]);\r\n        \r\n\r\n        console.log(\"ProjectGroups: \", response.data[\"languages\"]);\r\n\r\n        projectGroups.map((projectGroup) => {\r\n            return console.log(\"Sprache\", projectGroup[\"language\"] );\r\n        })\r\n\r\n\r\n    if (response.data === []){\r\n        console.log(\"No Languages found\");\r\n        return;\r\n    }\r\n\r\n    setFilterStatus(\"languages\");\r\n\r\n\r\n    }\r\n\r\n     /*useEffect(() => {\r\n            getLanguages();\r\n        }, []);*/\r\n\r\n\r\n\r\n    async function getProperties() {\r\n\r\n        try{\r\n\r\n            const response = await axios.post(\"http://localhost:5000/get-portfolio-projects-sorted-by-properties\");\r\n\r\n        if (response.data === []){\r\n            console.log(\"No Languages found\");\r\n            return;\r\n        }\r\n        setFilterStatus(\"properties\");\r\n\r\n        setProjectGroups(response.data[\"properties\"]);\r\n\r\n        } catch(err){\r\n            console.error(err);\r\n        }\r\n\r\n    }\r\n\r\n    return(\r\n        <section style={{position: \"relative\", margin: \"auto\"}} id=\"portfolio\" class=\"portfolio section centerElementsWithBottomSpace\">\r\n\r\n            <div>\r\n                <SortByInput sortByLanguage={getLanguages} sortByProperties={getProperties} />\r\n            </div>\r\n\r\n      {/* Section Title */}\r\n      <div class=\"container section-title\" >\r\n        <h2>Portfolio</h2>\r\n      </div>{/* End Section Title */}\r\n\r\n      <div class=\"container\">\r\n\r\n        <div class=\"isotope-layout\" data-default-filter=\"*\" data-layout=\"masonry\" data-sort=\"original-order\">\r\n\r\n\r\n            {filterStatus === \"properties\" && (\r\n                <div>\r\n                    {projectGroups.map((projectGroup) => {\r\n                        return (<PortfolioCard index={projectGroup[\"id\"]} title={projectGroup[\"main_topic\"]} description=\"\"\r\n                                               image={projectGroup[\"property_image\"]}/>)\r\n                    })}\r\n                </div>\r\n            )}\r\n\r\n\r\n            {filterStatus === \"languages\" && (\r\n                <div>\r\n                    {projectGroups.map((projectGroup) => {\r\n                        return (<PortfolioCard index={projectGroup[\"id\"]} title={projectGroup[\"language\"]} description=\"\"\r\n                                               image={projectGroup[\"language_image\"]} />)\r\n                    })}\r\n                </div>\r\n            )}\r\n\r\n\r\n        </div>\r\n\r\n      </div>\r\n\r\n    </section>\r\n        \r\n    );\r\n}\r\n\r\nexport default Portfolio;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frontend/src/Portfolio.js b/frontend/src/Portfolio.js
+--- a/frontend/src/Portfolio.js	(revision d331023c3a1823c02eeda569c60eedbc693d2c67)
++++ b/frontend/src/Portfolio.js	(date 1730379197005)
+@@ -76,35 +76,46 @@
+ 
+       <div class="container">
+ 
+-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
++          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+ 
+-
+-            {filterStatus === "properties" && (
+-                <div>
+-                    {projectGroups.map((projectGroup) => {
+-                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["main_topic"]} description=""
+-                                               image={projectGroup["property_image"]}/>)
+-                    })}
+-                </div>
+-            )}
++              {filterStatus === "properties" && (
++                  <div>
++                      {projectGroups.length === 0 ? (
++                          <p>Loading...</p>
++                      ) : (
++                          projectGroups.map((projectGroup) => (
++                              <PortfolioCard
++                                  key={projectGroup["id"]}
++                                  title={projectGroup["main_topic"]}
++                                  description=""
++                                  image={projectGroup["property_image"]}
++                              />
++                          ))
++                      )}
++                  </div>
++              )}
+ 
+ 
+-            {filterStatus === "languages" && (
+-                <div>
+-                    {projectGroups.map((projectGroup) => {
+-                        return (<PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
+-                                               image={projectGroup["language_image"]} />)
+-                    })}
+-                </div>
+-            )}
++              {filterStatus === "languages" && (
++                  <div>
++                      {projectGroups.length === 0 ? (
++                          <p>Loading...</p>
++                      ) : (
++                          projectGroups.map((projectGroup) => (
++                              <PortfolioCard index={projectGroup["id"]} title={projectGroup["language"]} description=""
++                                             image={projectGroup["language_image"]}/>
++                          ))
++                      )}
++                  </div>
++              )}
+ 
+ 
+-        </div>
++          </div>
+ 
+       </div>
+ 
+-    </section>
+-        
++        </section>
++
+     );
+ }
+ 
 Index: .idea/workspace.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
@@ -7,13 +85,18 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 ===================================================================
 diff --git a/.idea/workspace.xml b/.idea/workspace.xml
 --- a/.idea/workspace.xml	(revision d331023c3a1823c02eeda569c60eedbc693d2c67)
-+++ b/.idea/workspace.xml	(date 1730090451392)
-@@ -9,8 +9,6 @@
-       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2024_17_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2024_17_06__Changes_.xml" afterDir="false" />
-       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2024_00_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2024_00_54__Changes_.xml" afterDir="false" />
-       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_10_2024_23_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_10_2024_23_02__Changes_.xml" afterDir="false" />
--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++++ b/.idea/workspace.xml	(date 1730376640837)
+@@ -5,12 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Profilbild hibzugefügt und bei über-mich seite was am header geändert">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2024_16_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2024_16_56__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2024_17_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2024_17_06__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2024_00_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2024_00_54__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_10_2024_23_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_10_2024_23_02__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 -      <change beforePath="$PROJECT_DIR$/frontend/src/UeberMich.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/UeberMich.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/frontend/src/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Portfolio.js" afterDir="false" />
      </list>
      <option name="SHOW_DIALOG" value="false" />
      <option name="HIGHLIGHT_CONFLICTS" value="true" />
