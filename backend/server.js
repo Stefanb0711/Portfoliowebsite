@@ -4,6 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import {config} from "dotenv";
 //import { Client } from "pg";
+import cron from 'node-cron';
 
 
 config();
@@ -27,6 +28,23 @@ db.connect(err => {
         console.log('Connected to the database');
     }
 });
+
+async function keepDatabaseAwake() {
+  try {
+    const result = await db.query('SELECT 1');
+    console.log("Database keep-alive check:", result.rows);
+  } catch (error) {
+    console.error("Error keeping database awake:", error);
+  }
+}
+
+// Cron-Job, der alle 5 Minuten eine Abfrage sendet
+cron.schedule('*/5 * * * *', () => {
+  console.log("Running database keep-alive check");
+  keepDatabaseAwake();
+});
+
+
 app.use(bodyParser.json());
 
 
