@@ -1,7 +1,7 @@
 /**
 * Template Name: Arsha
 * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Updated: Jun 29 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -15,9 +15,18 @@
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+    if (!selectHeader) {
+      console.warn('#header not yet loaded, retrying...');
+      setTimeout(toggleScrolled, 100); // Wiederhole nach 100 ms
+      return;
+    }
+    if (!selectHeader.classList.contains('scroll-up-sticky') &&
+        !selectHeader.classList.contains('sticky-top') &&
+        !selectHeader.classList.contains('fixed-top')) return;
+
     window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
+
 
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
@@ -25,7 +34,15 @@
   /**
    * Mobile nav toggle
    */
+  //const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  if (mobileNavToggleBtn) {
+    mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+  } else {
+    console.error('.mobile-nav-toggle not found in DOM');
+  }
+
 
   function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
@@ -72,6 +89,17 @@
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  } else {
+    console.error('.scroll-top not found in DOM');
+  }
 
   function toggleScrollTop() {
     if (scrollTop) {
@@ -224,7 +252,10 @@
       }
     })
   }
-  window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
+  document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('load', navmenuScrollspy);
+    document.addEventListener('scroll', navmenuScrollspy);
+  });
+
 
 })();
