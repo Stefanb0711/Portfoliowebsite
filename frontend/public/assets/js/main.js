@@ -14,9 +14,16 @@
    */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  const selectHeader = document.querySelector('#header');
+  if (!selectHeader) {
+    console.error('#header not found in DOM');
+    return;
+  }
+  if (!selectHeader.classList.contains('scroll-up-sticky') &&
+      !selectHeader.classList.contains('sticky-top') &&
+      !selectHeader.classList.contains('fixed-top')) return;
+  window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+
   }
 
 
@@ -26,7 +33,15 @@
   /**
    * Mobile nav toggle
    */
+  //const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  if (mobileNavToggleBtn) {
+    mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+  } else {
+    console.error('.mobile-nav-toggle not found in DOM');
+  }
+
 
   function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
@@ -73,6 +88,17 @@
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  } else {
+    console.error('.scroll-top not found in DOM');
+  }
 
   function toggleScrollTop() {
     if (scrollTop) {
