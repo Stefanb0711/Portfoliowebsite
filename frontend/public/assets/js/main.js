@@ -14,16 +14,17 @@
    */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
-  const selectHeader = document.querySelector('#header');
-  if (!selectHeader) {
-    console.error('#header not found in DOM');
-    return;
-  }
-  if (!selectHeader.classList.contains('scroll-up-sticky') &&
-      !selectHeader.classList.contains('sticky-top') &&
-      !selectHeader.classList.contains('fixed-top')) return;
-  window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    const selectHeader = document.querySelector('#header');
+    if (!selectHeader) {
+      console.warn('#header not yet loaded, retrying...');
+      setTimeout(toggleScrolled, 100); // Wiederhole nach 100 ms
+      return;
+    }
+    if (!selectHeader.classList.contains('scroll-up-sticky') &&
+        !selectHeader.classList.contains('sticky-top') &&
+        !selectHeader.classList.contains('fixed-top')) return;
 
+    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
 
 
@@ -251,7 +252,10 @@
       }
     })
   }
-  window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
+  document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('load', navmenuScrollspy);
+    document.addEventListener('scroll', navmenuScrollspy);
+  });
+
 
 })();
