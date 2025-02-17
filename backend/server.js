@@ -92,7 +92,7 @@ app.post("/get-portfolio-projects-sorted-by-properties", async (req, res) => {
 
         const result = await db.query("SELECT DISTINCT main_topic, property_image FROM projects");
 
-        if(result.rows.length === 0){
+        if (result.rows.length === 0){
             console.log("Keine Sprachen gefunden");
             return res.status(404).json({message: "Language not found"});
         }
