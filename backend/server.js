@@ -48,7 +48,7 @@ app.use(cors(corsOptions));
 
 app.post("/get-all-portfolio-projects", async (req, res) => {
 
-    try{
+    try {
         const result = await db.query("SELECT * FROM projects")
 
     } catch(err){

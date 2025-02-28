@@ -489,6 +489,59 @@
         { "type": "p", "content": "In diesem Dokument gehen wir Schritt für Schritt die Vorgehensweise durch, wie man eine Website hacken könnte. Außerdem schauen wir uns gängige Fehler und Verletzlichkeiten in Websites an, und wie man sie vermeidet." },
         { "type": "a", "href":  "/assets/ethicalHackingFiles/WebsiteHacking.pdf", "isIcon":  true, "iconType": "pdf", "target":  "_blank"}
       ]
+    },
+
+    {
+      "id": 29,
+      "title": "Wordpresswebsite",
+      "author": "Stefan",
+      "date": "2023-09-01",
+      "postContent": [
+        { "type": "h1", "content": "Wordpresswebsite" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/WordpressWebsite/startseite.png" },
+        { "type": "p", "content": "" },
+        { "type": "a", "href":  "/assets/ethicalHackingFiles/WebsiteHacking.pdf", "isIcon":  true, "iconType": "pdf", "target":  "_blank"}
+      ]
+    },
+
+    {
+      "id": 30,
+      "title": "Invoiceconverter",
+      "author": "Stefan",
+      "date": "2023-09-01",
+      "postContent": [
+        { "type": "h1", "content": "Invoiceconverter" },
+        { "type": "img", "src": "/assets/img/GUI/eRechnungsconverter/startbild.jpg" },
+        { "type": "p", "content": "" },
+        { "type": "a", "href": "https://github.com/Stefanb0711/eRechnungsConverter.git"}
+      ]
+    },
+
+    {
+      "id": 31,
+      "title": "ASP.NET Todolist (REST API)",
+      "author": "Stefan",
+      "date": "2023-09-01",
+      "postContent": [
+        { "type": "h1", "content": "ASP.NET Todolist (REST API)" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistASP.NET/start.png" },
+        { "type": "p", "content": "" },
+        { "type": "a", "href": "https://github.com/Stefanb0711/https://github.com/Stefanb0711/todoListCSAngular.git"}
+      ]
+    },
+
+    {
+      "id": 32,
+      "title": "ASP.NET Todolist (GraphQL)",
+      "author": "Stefan",
+      "date": "2023-09-01",
+      "postContent": [
+        { "type": "h1", "content": "ASP.NET Todolist (GraphQL)" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistASP.NET/start.png" },
+        { "type": "p", "content": "" },
+        { "type": "a", "href": "https://github.com/Stefanb0711/todolistGraphqlC-Angular.git"}
+      ]
     }
+
   ]
 }

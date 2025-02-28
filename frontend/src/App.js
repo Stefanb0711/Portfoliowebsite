@@ -10,6 +10,7 @@ import ExplanationSite from "./components/ExplanationSite";
 import posts from "./blogPosts.json"
 import PortfolioExplanation from "./components/PortfolioExplanation";
 import {useEffect} from "react";
+import NeuesPage from "./Neues";
 
 const ScrollToTop = () => {
   const {pathname} = useLocation();
@@ -32,7 +33,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/über-mich" element={<UeberMich />} />
-
+            <Route path="/neues" element={<NeuesPage />} />
             {posts["posts"].map((post) => (
                 <Route
                     key={post.id}
