@@ -47,6 +47,8 @@ function App() {
 
             <Route path="/python" element={<PortfolioSiteTopic />} />
             <Route path="/javascript" element={<PortfolioSiteTopic />} />
+            <Route path="/csharp" element={<PortfolioSiteTopic />} />
+            <Route path="/wordpress" element={<PortfolioSiteTopic />} />
             <Route path="/cpp" element={<PortfolioSiteTopic />} />
 
             <Route path="/ethical-hacking" element={<PortfolioSiteTopic />} />

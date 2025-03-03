@@ -39,11 +39,14 @@ function Header() {
                         <ul >
                             <li className="dropdown">
                                 <a href="/python"><span>Python</span> </a>
-
                             </li>
 
                             <li className="dropdown">
                                 <a href="/javascript"><span>Javascript</span></a>
+                            </li>
+
+                            <li className="dropdown">
+                                <a href="/csharp"><span>C#</span></a>
                             </li>
 
                             <li className="dropdown">

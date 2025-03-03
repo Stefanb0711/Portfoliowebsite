@@ -108,7 +108,7 @@ app.post("/get-topic-projects", async (req, res) => {
             .join('-');
     }
 
-    if (getData !== "python" && getData !== "javascript" && getData !== "c++") {
+    if (getData !== "python" && getData !== "javascript" && getData !== "csharp" && getData !== "c++") {
         console.log("Condition met: getData is not python, javascript, or c++");
         currentTopicName = capitalizeAfterHyphens(getData);
     } else {

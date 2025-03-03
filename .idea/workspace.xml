@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Einige Bilder für Projekte hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/frontend/src/Neues.js" afterDir="false" />
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Stand">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/myStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/myStyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/blogPosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/blogPosts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,15 +144,7 @@
       <workItem from="1730222960364" duration="1212000" />
       <workItem from="1733763812742" duration="825000" />
       <workItem from="1740736975227" duration="302000" />
-      <workItem from="1740737350203" duration="15419000" />
-    </task>
-    <task id="LOCAL-00002" summary="Kann grob schonmal nach Thema sortieren">
-      <option name="closed" value="true" />
-      <created>1721843032172</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1721843032172</updated>
+      <workItem from="1740737350203" duration="33485000" />
     </task>
     <task id="LOCAL-00003" summary="PortfoliositeTopic funktioniert">
       <option name="closed" value="true" />
@@ -540,7 +530,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740738176636</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Stand">
+      <option name="closed" value="true" />
+      <created>1740760350524</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1740760350524</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +573,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Headers angepasst, dass er sich bei ExplanationSites nicht verschiebt" />
     <MESSAGE value="Kleine Anpassungen" />
     <MESSAGE value="Footer Anpassungen" />
     <MESSAGE value="Verbindung mit Datenbank mittels DatenbankUrl" />
@@ -600,7 +597,8 @@
     <MESSAGE value="Paar Debugs" />
     <MESSAGE value="Mit neuer Datenbank" />
     <MESSAGE value="Einige Bilder für Projekte hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Einige Bilder für Projekte hinzugefügt" />
+    <MESSAGE value="Stand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

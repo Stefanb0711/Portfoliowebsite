@@ -498,9 +498,13 @@
       "date": "2023-09-01",
       "postContent": [
         { "type": "h1", "content": "Wordpresswebsite" },
+
+        { "type": "a", "href":  "www.awb-it.de", "isIcon":  true, "iconType": "pdf", "target":  "_blank"},
+
         { "type": "img", "src": "/assets/img/FrontendBackend/WordpressWebsite/startseite.png" },
-        { "type": "p", "content": "" },
-        { "type": "a", "href":  "/assets/ethicalHackingFiles/WebsiteHacking.pdf", "isIcon":  true, "iconType": "pdf", "target":  "_blank"}
+        { "type":  "h3", "src":  "/Technologien"},
+        { "type": "p", "content": "- Wordpress" },
+        { "type": "p", "content": "- Elementor" }
       ]
     },
 
@@ -511,9 +515,20 @@
       "date": "2023-09-01",
       "postContent": [
         { "type": "h1", "content": "Invoiceconverter" },
+        { "type": "a", "href": "https://github.com/Stefanb0711/https://github.com/Stefanb0711/todoListCSAngular.git"},
+
         { "type": "img", "src": "/assets/img/GUI/eRechnungsconverter/startbild.jpg" },
-        { "type": "p", "content": "" },
-        { "type": "a", "href": "https://github.com/Stefanb0711/eRechnungsConverter.git"}
+        { "type": "p", "content": "Ein Einfaches GUI-Programm, mit dem man Rechnungen, die im XMl-Format vorliegen, in eine PDF umwandeln kann"},
+        { "type": "a", "href": "https://github.com/Stefanb0711/eRechnungsConverter.git"},
+        { "type": "p", "content": "Man kann sich den Speicherort seiner Rechnung aussuchen, mittels Filemenü, sowie die XML-Rechnung die man umwandlen will"},
+        { "type": "p", "content": "Außerdem kann das Programm die Emails filtern nach XML-Rechnungen, und diese dann automatisch umwandeln, und an dem angegebenen Speicherort abspeichern"},
+        {"type":  "p", "content":  "Hinweis zum Selbertesten:   "},
+        { "type": "h2", "content": "Technologien: " },
+        { "type": "p", "content": "- Angular" },
+        { "type": "p", "content": "- ASP.NET(C#)" },
+        { "type": "p", "content": "- MongoDb" },
+        { "type": "p", "content": "- Tailwindcss" },
+        { "type": "p", "content": "- Graphql" }
       ]
     },
 
@@ -524,9 +539,28 @@
       "date": "2023-09-01",
       "postContent": [
         { "type": "h1", "content": "ASP.NET Todolist (REST API)" },
+        { "type": "a", "href": "https://github.com/Stefanb0711/https://github.com/Stefanb0711/todoListCSAngular.git"},
+
         { "type": "img", "src": "/assets/img/FrontendBackend/TodolistASP.NET/start.png" },
-        { "type": "p", "content": "" },
-        { "type": "a", "href": "https://github.com/Stefanb0711/https://github.com/Stefanb0711/todoListCSAngular.git"}
+        { "type": "p", "content": "Eine Todliste mit Angular im Frontend, und einer REST-Api im Backend, die mit ASP.NET (c#) erstellt wurde" },
+
+        { "type": "h2", "content": "Funktionalitäten: " },
+        { "type": "p", "content": "- Account erstellen möglich" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistAsp.Net/Login.png" },
+        { "type": "p", "content": "- Contextmenü bei Rechtsklick" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistAsp.Net/contextMenue.png" },
+        { "type": "p", "content": "- Listen und deren Unterpunkte erstellen" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistAsp.Net/contextMenue.png" },
+
+        { "type": "h2", "content": "Technologien: " },
+        { "type": "p", "content": "- Angular" },
+        { "type": "p", "content": "- ASP.NET(C#)" },
+        { "type": "p", "content": "- MongoDb" },
+        { "type": "p", "content": "- Tailwindcss" },
+
+
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistASP.NET/start.png" },
+        { "type": "p", "content": "" }
       ]
     },
 
@@ -537,8 +571,29 @@
       "date": "2023-09-01",
       "postContent": [
         { "type": "h1", "content": "ASP.NET Todolist (GraphQL)" },
+        { "type": "p", "content": "Eine Todolist, die als Backend ASP.NET mit einer Graphql-API verwendet, und als Frontend " },
+
         { "type": "img", "src": "/assets/img/FrontendBackend/TodolistASP.NET/start.png" },
-        { "type": "p", "content": "" },
+        { "type": "p", "content": "Eine Todliste mit Angular im Frontend, und einer REST-Api im Backend, die mit ASP.NET (c#) erstellt wurde" },
+        { "type": "h2", "content": "Funktionalitäten: " },
+        { "type": "p", "content": "- Account erstellen möglich" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistAsp.Net/Login.png" },
+        { "type": "p", "content": "- Contextmenü bei Rechtsklick" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistAsp.Net/contextMenue.png" },
+        { "type": "p", "content": "- Listen und deren Unterpunkte erstellen" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistAsp.Net/contextMenue.png" },
+
+        { "type": "h2", "content": "Technologien: " },
+        { "type": "p", "content": "- Angular" },
+        { "type": "p", "content": "- ASP.NET(C#)" },
+        { "type": "p", "content": "- MongoDb" },
+        { "type": "p", "content": "- Tailwindcss" },
+        { "type": "p", "content": "- Graphql" },
+
+        { "type": "p", "content": "- Verwendung von Graphql" },
+        { "type": "img", "src": "/assets/img/FrontendBackend/TodolistAsp.Net/contextMenue.png" },
+
+
         { "type": "a", "href": "https://github.com/Stefanb0711/todolistGraphqlC-Angular.git"}
       ]
     }
