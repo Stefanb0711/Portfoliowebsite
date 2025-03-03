@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Paar Debugs" />
+    <list default="true" id="f2b01e97-c4ce-4fcb-b0a7-41315b3e25f3" name="Changes" comment="Änderungen mit neuen Einträgen versuch">
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/TodolistAsp.Net/Login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/TodolistAsp.Net/contextMenue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/TodolistAsp.Net/querysUndMutations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/TodolistAsp.Net/start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/WordpressWebsite/startseite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/WordpressWebsite/wordpressLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/GUI/eRechnungsconverter/Screenshot 2024-11-06 043349.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/GUI/eRechnungsconverter/Screenshot 2025-02-27 140530.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/csharpLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/profilbildVonMir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/assets/img/profilbildVonMirAusgeschnitten.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backup.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/AWB-IT-WebsiteWordpress/awbStartseite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/Screenshot 2025-01-24 224751.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/img/GUI/eRechnungsconverter/startbild.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/TodolistAngularC#/todoListContextmenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/assets/img/FrontendBackend/TodolistAngularC#/todolistStart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/blogPosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/blogPosts.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +107,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src" />
+      <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src\assets\css" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\src\assets\vendor" />
       <recent name="C:\Users\stefa\Dropbox\portfoliowebsite\portfoliowebsite\frontend\public\assets\vendor" />
@@ -558,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AngularChatApp Artikel hinzugefügt" />
     <MESSAGE value="Headers angepasst, dass er sich bei ExplanationSites nicht verschiebt" />
     <MESSAGE value="Kleine Anpassungen" />
     <MESSAGE value="Footer Anpassungen" />
@@ -583,7 +609,8 @@
     <MESSAGE value="Verlinkung auf über-mich seite geändert" />
     <MESSAGE value="Paar Debugs" />
     <MESSAGE value="Mit neuer Datenbank" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mit neuer Datenbank" />
+    <MESSAGE value="Änderungen mit neuen Einträgen versuch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Änderungen mit neuen Einträgen versuch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -47,6 +47,10 @@ function Header() {
                             </li>
 
                             <li className="dropdown">
+                                <a href="/csharp"><span>C#</span></a>
+                            </li>
+
+                            <li className="dropdown">
                                 <a href="/frontend-backend"><span>Webentwicklung</span> </a>
                             </li>
 
